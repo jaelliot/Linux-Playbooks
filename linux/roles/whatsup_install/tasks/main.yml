@@ -1,0 +1,44 @@
+---
+- name: Ensure WhatsApp Client dependencies and installation on Rocky Linux
+  hosts: all
+  become: yes
+  tasks:
+    - name: Check if snapd is installed
+      ansible.builtin.package_facts:
+        manager: "auto"
+
+    - name: Install snapd
+      ansible.builtin.dnf:
+        name: snapd
+        state: present
+      when: "'snapd' not in ansible_facts.packages"
+
+    - name: Enable snapd socket
+      ansible.builtin.systemd:
+        name: snapd.socket
+        state: started
+        enabled: yes
+      when: "'snapd' not in ansible_facts.packages"
+
+    - name: Create symbolic link for snap
+      ansible.builtin.file:
+        src: /var/lib/snapd/snap
+        dest: /snap
+        state: link
+      when: "'snapd' not in ansible_facts.packages"
+
+    - name: Install WhatsApp Web Desktop client via Snap
+      ansible.builtin.shell:
+        cmd: snap install whatsapp-for-linux
+        warn: false
+      args:
+        creates: /snap/bin/whatsapp-for-linux
+      register: whatsapp_installation
+      failed_when: whatsapp_installation.stderr != "" and "snap \"whatsapp-for-linux\" is already installed" not in whatsapp_installation.stderr
+
+    - name: Verify WhatsApp Installation
+      ansible.builtin.command:
+        cmd: snap list whatsapp-for-linux
+      register: whatsapp_check
+      changed_when: false
+      failed_when: whatsapp_check.rc != 0

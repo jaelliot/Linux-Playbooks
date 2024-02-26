@@ -1,0 +1,20 @@
+- name: Disable Cortana features on Windows 10
+  hosts: windows_hosts
+  gather_facts: no
+  tasks:
+    - name: Ensure registry paths exist and set properties to disable Cortana features
+      win_regedit:
+        path: "{{ item.path }}"
+        name: "{{ item.name }}"
+        data: "{{ item.data }}"
+        type: "{{ item.type }}"
+        state: present
+      loop:
+        - { path: 'HKCU:\Software\Microsoft\Personalization\Settings', name: 'AcceptedPrivacyPolicy', data: 0, type: 'dword' }
+        - { path: 'HKCU:\Software\Microsoft\InputPersonalization', name: 'RestrictImplicitTextCollection', data: 1, type: 'dword' }
+        - { path: 'HKCU:\Software\Microsoft\InputPersonalization', name: 'RestrictImplicitInkCollection', data: 1, type: 'dword' }
+        - { path: 'HKCU:\Software\Microsoft\InputPersonalization\TrainedDataStore', name: 'HarvestContacts', data: 0, type: 'dword' }
+        - { path: 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced', name: 'ShowCortanaButton', data: 0, type: 'dword' }
+        - { path: 'HKLM:\SOFTWARE\Microsoft\PolicyManager\default\Experience\AllowCortana', name: 'Value', data: 0, type: 'dword' }
+        - { path: 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\Windows Search', name: 'AllowCortana', data: 0, type: 'dword' }
+        - { path: 'HKLM:\SOFTWARE\Policies\Microsoft\InputPersonalization', name: 'AllowInputPersonalization', data: 0, type: 'dword' }

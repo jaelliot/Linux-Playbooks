@@ -1,0 +1,10 @@
+---
+- name: Install EPEL repository
+  ansible.builtin.yum:
+    name: epel-release
+    state: present
+
+- name: Install Wine
+  ansible.builtin.yum:
+    name: wine
+    state: present

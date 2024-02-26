@@ -1,0 +1,6 @@
+---
+shortcut_name: "GNOME Terminal"
+shortcut_comment: "Use the command line"
+shortcut_exec: "gnome-terminal"
+shortcut_icon: "gnome-terminal"
+shortcut_categories: "GNOME;GTK;Utility;TerminalEmulator;"

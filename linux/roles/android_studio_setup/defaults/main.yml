@@ -1,0 +1,4 @@
+---
+android_studio_version: "2020.3.1"
+android_studio_download_url: "https://redirector.gvt1.com/edgedl/android/studio/ide-zips/{{ android_studio_version }}/android-studio-{{ android_studio_version }}-linux.tar.gz"
+android_studio_install_dir: "/opt/android_studio"

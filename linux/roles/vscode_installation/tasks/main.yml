@@ -1,0 +1,28 @@
+---
+- name: Check if VSCode is already installed
+  ansible.builtin.shell: rpm -q code
+  register: vscode_installed
+  failed_when: vscode_installed.rc > 1
+  changed_when: false
+  ignore_errors: yes
+
+- name: Import Microsoft GPG key
+  ansible.builtin.rpm_key:
+    state: present
+    url: "{{ vscode_repo_gpg_key }}"
+  when: vscode_installed.rc == 1
+
+- name: Add VSCode repository
+  ansible.builtin.yum_repository:
+    name: vscode
+    description: Visual Studio Code
+    baseurl: "{{ vscode_repo_url }}"
+    gpgcheck: yes
+    gpgkey: "{{ vscode_repo_gpg_key }}"
+  when: vscode_installed.rc == 1
+
+- name: Install VSCode
+  ansible.builtin.package:
+    name: "{{ vscode_package_name }}"
+    state: present
+  when: vscode_installed.rc == 1

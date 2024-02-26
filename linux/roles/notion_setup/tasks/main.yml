@@ -1,0 +1,34 @@
+---
+- name: Check if snapd is already installed
+  ansible.builtin.package_facts:
+    manager: "auto"
+
+- name: Install snapd
+  ansible.builtin.dnf:
+    name: snapd
+    state: present
+  when: "'snapd' not in ansible_facts.packages"
+
+- name: Enable snapd socket
+  ansible.builtin.systemd:
+    name: snapd.socket
+    state: started
+    enabled: yes
+  when: "'snapd' not in ansible_facts.packages"
+
+- name: Create symlink for snap
+  ansible.builtin.file:
+    src: /var/lib/snapd/snap
+    dest: /snap
+    state: link
+  when: "'snapd' not in ansible_facts.packages"
+
+- name: Install Notion if not already installed
+  ansible.builtin.shell: |
+    if ! snap list | grep -q notion-snap; then
+      snap install notion-snap
+    fi
+  args:
+    executable: /bin/bash
+  become: true
+  notify: restart snapd.socket

@@ -1,0 +1,33 @@
+---
+- name: Check if NVIDIA driver is already installed
+  command: nvidia-smi --query-gpu=driver_version --format=csv,noheader
+  register: installed_driver_version
+  failed_when: installed_driver_version.stdout != nvidia_driver_version
+  changed_when: false
+  ignore_errors: yes
+
+- name: Download NVIDIA Linux driver
+  get_url:
+    url: "{{ nvidia_driver_url }}"
+    dest: "{{ working_path }}/NVIDIA-Linux-x86_64-{{ nvidia_driver_version }}.run"
+    mode: '0755'
+  when: installed_driver_version is failed
+
+- name: Check for Nouveau driver
+  shell: lsmod | grep nouveau
+  register: nouveau_present
+  ignore_errors: true
+  changed_when: false
+
+- name: Ensure the Nouveau driver is disabled
+  lineinfile:
+    path: /etc/modprobe.d/blacklist-nouveau.conf
+    line: "blacklist nouveau"
+    create: yes
+  when: nouveau_present.rc == 0
+  notify: Rebuild initramfs
+
+- name: Install NVIDIA Linux driver
+  command: "{{ working_path }}/NVIDIA-Linux-x86_64-{{ nvidia_driver_version }}.run --silent"
+  when: installed_driver_version is failed
+  become: yes

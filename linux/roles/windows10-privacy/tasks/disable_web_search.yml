@@ -1,0 +1,17 @@
+- name: Disable Web Search
+  hosts: windows_hosts
+  gather_facts: no
+  tasks:
+    - name: Disable Web Search
+      win_regedit:
+        path: HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Search
+        name: "{{ item.name }}"
+        data: "{{ item.data }}"
+        type: dword
+        state: present
+        hive: C:\Users\Default\NTUSER.dat
+      loop:
+        - name: BingSearchEnabled
+          data: 0
+        - name: CortanaConsent
+          data: 0

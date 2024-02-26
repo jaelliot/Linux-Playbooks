@@ -1,0 +1,24 @@
+---
+- name: Enable features for WSL
+  win_feature:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - Microsoft-Windows-Subsystem-Linux
+    - VirtualMachinePlatform
+
+- name: Set WSL default version to 2
+  win_shell: wsl --set-default-version 2
+  ignore_errors: yes
+
+- name: Install Ubuntu for WSL
+  win_shell: wsl --install -d Ubuntu
+  ignore_errors: yes
+
+- name: Install Kali Linux for WSL
+  win_shell: wsl --install -d Kali-Linux
+  ignore_errors: yes
+
+- name: Install SUSE Linux Enterprise Server 15 SP4 for WSL
+  win_shell: wsl --install -d SUSE-Linux-Enterprise-Server-15-SP4
+  ignore_errors: yes

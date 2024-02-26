@@ -1,0 +1,58 @@
+---
+- hosts: all
+  become: yes
+  vars:
+    virtualbox_package_name: VirtualBox-6.1
+    required_packages:
+      - wget
+      - dkms
+      - kernel-devel
+      - kernel-headers
+      - make
+      - gcc
+    virtualbox_repo_url: https://download.virtualbox.org/virtualbox/rpm/el/virtualbox.repo
+    virtualbox_repo_dest: /etc/yum.repos.d/virtualbox.repo
+
+  tasks:
+    - name: Check internet connectivity
+      command: ping -c 1 8.8.8.8
+      register: ping_result
+      failed_when: ping_result.rc != 0
+      ignore_errors: yes
+      tags: 
+        - always
+
+    - block:
+        - name: Ensure wget and other required tools are installed
+          dnf:
+            name: "{{ required_packages }}"
+            state: present
+
+        - name: Download VirtualBox repository file
+          get_url:
+            url: "{{ virtualbox_repo_url }}"
+            dest: "{{ virtualbox_repo_dest }}"
+          notify: Install VirtualBox
+          when: ping_result.rc == 0
+
+        - name: Install kernel development packages
+          dnf:
+            name: "{{ required_packages }}"
+            state: present
+
+        - name: Install VirtualBox
+          dnf:
+            name: "{{ virtualbox_package_name }}"
+            state: present
+          when: ping_result.rc == 0
+
+      rescue:
+        - name: Print failure message
+          debug:
+            msg: "Internet connectivity issue, unable to proceed with installation."
+
+  handlers:
+    - name: Install VirtualBox
+      dnf:
+        name: "{{ virtualbox_package_name }}"
+        state: present

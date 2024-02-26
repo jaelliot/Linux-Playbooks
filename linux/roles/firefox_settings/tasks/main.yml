@@ -1,0 +1,11 @@
+- name: Ensure Firefox policies directory exists
+  file:
+    path: /usr/lib/firefox/distribution
+    state: directory
+  become: yes
+
+- name: Configure Firefox Policies
+  copy:
+    src: files/policies.json
+    dest: /usr/lib/firefox/distribution/policies.json
+  become: yes

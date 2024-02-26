@@ -1,0 +1,28 @@
+- name: Disable Feedback
+  hosts: windows_hosts
+  gather_facts: no
+  tasks:
+    - name: Disable Feedback
+      block:
+        - name: Create Rules key if not exists
+          win_regedit:
+            path: HKCU:\Software\Microsoft\Siuf\Rules
+            state: present
+        - name: Set NumberOfSIUFInPeriod to 0
+          win_regedit:
+            path: HKCU:\Software\Microsoft\Siuf\Rules
+            name: NumberOfSIUFInPeriod
+            data: 0
+            type: dword
+        - name: Disable Feedback Notifications
+          win_regedit:
+            path: HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection
+            name: DoNotShowFeedbackNotifications
+            data: 1
+            type: dword
+        - name: Disable Feedback Scheduled Tasks
+          win_command: "schtasks /Change /TN 'Microsoft\\Windows\\Feedback\\Siuf\\DmClient' /DISABLE"
+          ignore_errors: yes
+        - name: Disable Feedback Scenario Download Task
+          win_command: "schtasks /Change /TN 'Microsoft\\Windows\\Feedback\\Siuf\\DmClientOnScenarioDownload' /DISABLE"
+          ignore_errors: yes

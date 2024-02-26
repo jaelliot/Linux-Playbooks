@@ -1,0 +1,28 @@
+- name: Install Chrome Extensions on Rocky Linux
+  hosts: all
+  become: yes
+  tasks:
+    - name: Ensure Chrome policy directory exists
+      ansible.builtin.file:
+        path: /etc/opt/chrome/policies/managed
+        state: directory
+        mode: '0755'
+
+    - name: Configure Chrome extensions to be installed
+      ansible.builtin.copy:
+        dest: /etc/opt/chrome/policies/managed/extensions_policy.json
+        content: |
+          {
+            "ExtensionInstallForcelist": [
+              "enamippconapkdmgfgjchkhakpfinmaj;https://clients2.google.com/service/update2/crx",
+              "ponfpcnoihfmfllpaingbgckeeldkhle;https://clients2.google.com/service/update2/crx",
+              "nakplnnackehceedgkgkokbgbmfghain;https://clients2.google.com/service/update2/crx",
+              "ghbmnnjooekpmoecnnnilnnbdlolhkhi;https://clients2.google.com/service/update2/crx",
+              "aapbdbdomjkkjkaonfhkkikfgjllcleb;https://clients2.google.com/service/update2/crx",
+              # Add the rest of your extensions here
+              "mefhakmgclhhfbdadeojlkbllmecialg;https://clients2.google.com/service/update2/crx"
+            ]
+          }
+        owner: root
+        group: root
+        mode: '0644'

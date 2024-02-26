@@ -1,0 +1,16 @@
+- name: Disable Advertising ID
+  hosts: windows_hosts
+  gather_facts: no
+  tasks:
+    - name: Disable Advertising ID
+      block:
+        - name: Create AdvertisingInfo key if not exists
+          win_regedit:
+            path: HKLM:\SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo
+            state: present
+        - name: Disable Advertising ID
+          win_regedit:
+            path: HKLM:\SOFTWARE\Policies\Microsoft\Windows\AdvertisingInfo
+            name: DisabledByGroupPolicy
+            data: 1
+            type: dword

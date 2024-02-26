@@ -1,0 +1,23 @@
+- name: Update Chrome Policies on Rocky Linux
+  become: yes  # Required to write to /etc/opt/chrome/policies/managed/
+  copy:
+    dest: /etc/opt/chrome/policies/managed/chrome_policies.json
+    content: |
+      {
+        "AdsSettingForIntrusiveAdExperience": 2,
+        "AdsSettingForContextualAdExperience": 2,
+        "AdMeasurementEnabled": 0,
+        "BlockThirdPartyCookies": 1,
+        "SafeBrowsingProtectionLevel": 1,
+        "AlwaysUseSecureConnections": 1,
+        "DNSOverHTTPSMode": 1,
+        "MemorySaverEnabled": 1,
+        "BatterySaverModeEnabled": 1,
+        "ExperimentalAIFeaturesEnabled": 0,
+        "ForcedTheme": "System",
+        "RestoreOnStartup": 1,
+        "SpellCheckServiceEnabled": 0,
+        "TranslateEnabled": 1
+      }
+    mode: '0644'  # Sets the file permission
+  notify: Restart Chrome  # Assuming you have a handler to restart Chrome if needed

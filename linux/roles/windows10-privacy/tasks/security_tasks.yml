@@ -1,0 +1,4 @@
+- hosts: windows
+  tasks:
+    - name: Disable Windows Telemetry
+      win_command: powershell.exe -ExecutionPolicy Bypass -File C:\Temp\DisableTelemetry.ps1

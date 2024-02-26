@@ -1,0 +1,16 @@
+- name: Disable Tailored Experiences
+  hosts: windows_hosts
+  gather_facts: no
+  tasks:
+    - name: Disable Tailored Experiences
+      block:
+        - name: Create CloudContent key if not exists
+          win_regedit:
+            path: HKCU:\Software\Policies\Microsoft\Windows\CloudContent
+            state: present
+        - name: Disable Tailored Experiences with Diagnostic Data
+          win_regedit:
+            path: HKCU:\Software\Policies\Microsoft\Windows\CloudContent
+            name: DisableTailoredExperiencesWithDiagnosticData
+            data: 1
+            type: dword
