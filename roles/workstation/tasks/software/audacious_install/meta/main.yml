@@ -1,0 +1,17 @@
+galaxy_info:
+  author: Your Name
+  description: Role to install Audacious on Rocky Linux
+  company: Your Company
+
+  platforms:
+    - name: EL
+      versions:
+        - 8
+        - 9
+
+  galaxy_tags:
+    - software
+    - workstation
+    - audacious
+    - flatpak
+dependencies: []

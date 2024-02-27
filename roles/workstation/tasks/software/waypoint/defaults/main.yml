@@ -1,0 +1,6 @@
+---
+# defaults/main.yml
+yum_utils_package: yum-utils
+waypoint_repo_url: https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+waypoint_package: waypoint
+

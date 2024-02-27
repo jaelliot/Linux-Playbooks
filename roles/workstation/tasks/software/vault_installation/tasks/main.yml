@@ -1,0 +1,17 @@
+---
+- name: Install yum-utils
+  yum:
+    name: yum-utils
+    state: present
+
+- name: Add HashiCorp repository
+  get_url:
+    url: https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+    dest: /etc/yum.repos.d/hashicorp.repo
+  when: ansible_os_family == "RedHat"
+
+- name: Install Vault
+  yum:
+    name: vault
+    state: latest
+  when: ansible_os_family == "RedHat"

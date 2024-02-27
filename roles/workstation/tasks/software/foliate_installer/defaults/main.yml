@@ -1,0 +1,3 @@
+---
+# foliate_installer/defaults/main.yml
+foliate_install: true

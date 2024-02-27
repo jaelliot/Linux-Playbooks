@@ -1,0 +1,26 @@
+---
+- name: Check if Flatpak is installed
+  command: flatpak --version
+  register: flatpak_installed
+  ignore_errors: true
+  changed_when: false
+
+- name: Install Flatpak (if not present)
+  package:
+    name: flatpak
+    state: present
+  when: flatpak_installed.rc != 0
+  become: true
+
+- name: Install Audacious using Flatpak
+  flatpak:
+    name: org.atheme.audacious
+    method: user
+    state: present
+  when: audacious_install and flatpak_installed.rc == 0
+  become_user: jay
+  tags:
+    - packages
+    - flatpak
+    - audacious
+    - workstation-packages

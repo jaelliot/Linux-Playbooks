@@ -1,0 +1,21 @@
+# foliate_installer/tasks/main.yml
+---
+- name: Check if Flatpak is installed
+  command: flatpak --version
+  register: flatpak_installed
+  failed_when: flatpak_installed.rc != 0
+  ignore_errors: true
+
+- name: Install Flatpak
+  package:
+    name: flatpak
+    state: present
+  when: flatpak_installed is failed
+
+- name: Install Foliate via Flatpak
+  flatpak:
+    name: com.github.johnfactotum.Foliate
+    method: user
+    state: present
+  become_user: jay
+  when: foliate_install and flatpak_installed.rc == 0

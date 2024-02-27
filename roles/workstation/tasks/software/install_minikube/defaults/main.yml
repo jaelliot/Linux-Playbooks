@@ -1,0 +1,5 @@
+---
+user_name: Jay
+minikube_url: "https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64"
+minikube_destination: "/usr/local/bin/minikube"
+minikube_permissions: "0755"

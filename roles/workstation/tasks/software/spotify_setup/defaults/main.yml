@@ -1,0 +1,2 @@
+# spotify_setup/defaults/main.yml
+spotify_flatpak_package: "com.spotify.Client"

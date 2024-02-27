@@ -1,0 +1,19 @@
+---
+
+# tasks/main.yml
+- name: Install yum-utils
+  yum:
+    name: yum-utils
+    state: present
+
+- name: Add HashiCorp repository
+  get_url:
+    url: https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+    dest: /etc/yum.repos.d/hashicorp.repo
+  when: ansible_os_family == "RedHat"
+
+- name: Install Boundary
+  yum:
+    name: boundary
+    state: "{{ boundary_version }}"
+  become: true
