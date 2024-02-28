@@ -1,0 +1,15 @@
+---
+nautilus_dconf_settings:
+  - key: "/org/gnome/nautilus/list-view/use-tree-view"
+    value: "true"
+  - key: "/org/gnome/nautilus/preferences/default-folder-viewer"
+    value: "'list-view'"
+  - key: "/org/gnome/nautilus/preferences/click-policy"
+    value: "'single'"
+  - key: "/org/gnome/nautilus/preferences/executable-text-activation"
+    value: "'launch'"
+  - key: "/org/gnome/nautilus/preferences/show-delete-permanently"
+    value: "'true'"
+  - key: "/org/gtk/settings/file-chooser/sort-directories-first"
+    value: "false"
+

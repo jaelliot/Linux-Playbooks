@@ -1,0 +1,3 @@
+---
+# defaults/main.yml
+mamba_version: latest

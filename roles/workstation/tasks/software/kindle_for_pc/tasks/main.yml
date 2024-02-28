@@ -1,0 +1,24 @@
+---
+- name: Install necessary packages for Wine
+  ansible.builtin.dnf:
+    name:
+      - wine
+      - winetricks
+    state: present
+  become: true
+
+- name: Download Kindle for PC installer
+  ansible.builtin.get_url:
+    url: https://kindleforpc.s3.amazonaws.com/70682/KindleForPC-installer-2.3.70682.exe
+    dest: "/tmp/KindleForPC-installer-2.3.70682.exe"
+
+- name: Install Kindle for PC
+  ansible.builtin.command:
+    cmd: wine /tmp/KindleForPC-installer-2.3.70682.exe /S
+  become_user: "{{ ansible_user }}"
+  environment:
+    DISPLAY: ":0.0"
+    WINEPREFIX: "/home/{{ ansible_user }}/.wine"
+    WINEARCH: "win64"
+
+

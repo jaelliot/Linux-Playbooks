@@ -1,0 +1,27 @@
+---
+# tasks/main.yml
+- name: Check if Conda is already installed
+  command: "{{ conda_install_path }}/bin/conda --version"
+  register: conda_version_check
+  ignore_errors: yes
+  changed_when: false
+
+- name: Download Conda installer script
+  get_url:
+    url: "https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh"
+    dest: "/tmp/miniconda.sh"
+  when: conda_version_check is failed
+
+- name: Install Conda
+  shell: bash /tmp/miniconda.sh -b -p {{ conda_install_path }}
+  args:
+    creates: "{{ conda_install_path }}/bin/conda"
+  when: conda_version_check is failed
+
+- name: Ensure Conda is in PATH
+  lineinfile:
+    path: "/etc/profile.d/conda.sh"
+    line: 'export PATH="{{ conda_install_path }}/bin:$PATH"'
+    create: yes
+  when: conda_version_check is failed
+

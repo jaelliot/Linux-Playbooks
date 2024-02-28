@@ -1,0 +1,31 @@
+---
+# ulauncher_role/tasks/main.yml
+- name: Check if Ulauncher is already installed
+  command: command -v ulauncher
+  register: ulauncher_installed
+  failed_when: false
+  changed_when: false
+  check_mode: no
+
+- name: Install dependencies for Ulauncher
+  dnf:
+    name:
+      - gtk3
+      - python3
+      - python3-pip
+    state: present
+  when: ulauncher_installed.rc != 0
+
+- name: Install Ulauncher
+  pip:
+    name: ulauncher
+    state: "{{ ulauncher_version }}"
+  when: ulauncher_installed.rc != 0
+
+
+- name: Create Ulauncher desktop entry
+  template:
+    src: ulauncher.desktop.j2
+    dest: /usr/share/applications/ulauncher.desktop
+  when: ulauncher_installed.rc != 0
+

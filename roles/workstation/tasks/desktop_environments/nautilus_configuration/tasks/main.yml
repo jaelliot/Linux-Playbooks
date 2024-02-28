@@ -1,0 +1,20 @@
+---
+- name: Check if dconf is installed
+  ansible.builtin.package_facts:
+    manager: "auto"
+
+- name: Install dconf-cli if not present
+  ansible.builtin.package:
+    name: dconf-cli
+    state: present
+  when: "'dconf-cli' not in packages"
+
+- name: Apply Nautilus configurations
+  become: true
+  become_user: jay
+  ansible.builtin.dconf:
+    key: "{{ item.key }}"
+    value: "{{ item.value }}"
+  loop: "{{ nautilus_dconf_settings }}"
+  tags: gnome,nautilus
+

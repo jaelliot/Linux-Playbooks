@@ -1,0 +1,35 @@
+---
+- name: Check if google-cloud-cli is already installed
+  shell: dnf list installed google-cloud-cli
+  register: gcloud_cli_installed
+  failed_when: gcloud_cli_installed.stderr != '' and 'Error: No matching Packages to list' not in gcloud_cli_installed.stderr
+  changed_when: false
+
+- name: Add GCP CLI repository
+  become: yes
+  ansible.builtin.blockinfile:
+    path: /etc/yum.repos.d/google-cloud-sdk.repo
+    block: |
+      [google-cloud-cli]
+      name=Google Cloud CLI
+      baseurl=https://packages.cloud.google.com/yum/repos/cloud-sdk-el9-x86_64
+      enabled=1
+      gpgcheck=1
+      repo_gpgcheck=0
+      gpgkey=https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+    create: yes
+  when: gcloud_cli_installed.rc != 0
+
+- name: Install libxcrypt-compat.x86_64 for compatibility
+  become: yes
+  ansible.builtin.dnf:
+    name: libxcrypt-compat.x86_64
+    state: present
+
+- name: Install google-cloud-cli and components
+  become: yes
+  ansible.builtin.dnf:
+    name: "{{ gcp_cli_components }}"
+    state: present
+  when: gcloud_cli_installed.rc != 0
+

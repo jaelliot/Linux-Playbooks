@@ -1,0 +1,4 @@
+---
+autofs: true
+autofs_master_config: /etc/auto.master
+autofs_nfs_config: /etc/auto.nfs

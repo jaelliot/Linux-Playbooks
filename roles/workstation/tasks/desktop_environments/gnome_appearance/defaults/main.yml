@@ -1,0 +1,6 @@
+---
+wallpaper_src: files/wallpaper.jpg
+wallpaper_dest: /usr/share/backgrounds/jay-wallpaper.png
+lockscreen_src: files/lockscreen.jpg
+lockscreen_dest: /usr/share/backgrounds/jay-lockscreen.jpg
+user: jay

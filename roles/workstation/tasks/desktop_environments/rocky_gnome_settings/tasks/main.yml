@@ -1,0 +1,108 @@
+---
+- name: Ensure GNOME and dconf are installed
+  ansible.builtin.block:
+    - name: Check if 'dconf' is available
+      ansible.builtin.command: which dconf
+      register: dconf_check
+      failed_when: dconf_check.rc != 0
+      ignore_errors: true
+
+    - name: Install GNOME and dconf tools
+      ansible.builtin.dnf:
+        name:
+          - gnome-shell
+          - dconf
+        state: present
+      when: dconf_check is failed
+  become: true
+
+- name: Configure GNOME settings for user jay
+  ansible.builtin.block:
+    - name: "GNOME | Shell settings | button-layout"
+      ansible.builtin.dconf:
+        key: "/org/gnome/desktop/wm/preferences/button-layout"
+        value: "':close'"
+        user: "jay"
+
+    - name: "GNOME | Shell settings | enable-hot-corners"
+      ansible.builtin.dconf:
+        key: "/org/gnome/shell/interface/enable-hot-corners"
+        value: "false"
+        user: "jay"
+
+    - name: "GNOME | Shell settings | event-sounds (disable)"
+      ansible.builtin.dconf:
+        key: "/org/gnome/desktop/sound/event-sounds"
+        value: "false"
+        user: "jay"
+
+    - name: "GNOME | Shell settings | disable input feedback sounds"
+      ansible.builtin.dconf:
+        key: "/org/gnome/desktop/sound/input-feedback-sounds"
+        value: "false"
+        user: "jay"
+
+    - name: "GNOME | Shell settings | disable screen blanking"
+      ansible.builtin.dconf:
+        key: "/org/gnome/desktop/session/idle-delay"
+        value: "uint32 0"
+        user: "jay"
+
+    - name: "GNOME | Shell settings | disable automatic screen lock"
+      ansible.builtin.dconf:
+        key: "/org/gnome/desktop/screensaver/lock-enabled"
+        value: "false"
+        user: "jay"
+
+    - name: "GNOME | Shell settings | old-files-age"
+      ansible.builtin.dconf:
+        key: "/org/gnome/desktop/privacy/old-files-age"
+        value: "uint32 14"
+        user: "jay"
+
+    - name: "GNOME | Shell settings | remove-old-temp-files"
+      ansible.builtin.dconf:
+        key: "/org/gnome/desktop/privacy/remove-old-temp-files"
+        value: "true"
+        user: "jay"
+
+    - name: "GNOME | Shell settings | remove-old-trash-files"
+      ansible.builtin.dconf:
+        key: "/org/gnome/desktop/privacy/remove-old-trash-files"
+        value: "true"
+        user: "jay"
+
+    - name: "GNOME | Shell settings | search-providers"
+      ansible.builtin.dconf:
+        key: "/org/gnome/desktop/search-providers/disabled"
+        value: "['org.gnome.Nautilus.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Photos.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Calendar.desktop']"
+        user: "jay"
+
+    - name: "GNOME | Shell settings | show-battery-percentage"
+      ansible.builtin.dconf:
+        key: "/org/gnome/desktop/interface/show-battery-percentage"
+        value: "true"
+        user: "jay"
+
+    - name: "GNOME | Shell settings | show-in-lock-screen"
+      ansible.builtin.dconf:
+        key: "/org/gnome/desktop/notifications/show-in-lock-screen"
+        value: "false"
+        user: "jay"
+
+    - name: "GNOME | Shell settings | workspaces-only-on-primary"
+      ansible.builtin.dconf:
+        key: "/org/gnome/shell/overrides/workspaces-only-on-primary"
+        value: "true"
+        user: "jay"
+
+    - name: "GNOME | Shell settings | set gnome-screenshot default save directory"
+      ansible.builtin.dconf:
+        key: "/org/gnome/gnome-screenshot/auto-save-directory"
+        value: "'/home/jay'"
+        user: "jay"
+
+    # Ensure compatibility with Rocky Linux 9, skipping specific settings not applicable
+  become_user: jay
+  become: true
+  tags: gnome

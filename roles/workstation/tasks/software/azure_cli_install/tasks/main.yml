@@ -1,0 +1,17 @@
+---
+# tasks file for azure_cli_install
+
+- name: Import the Microsoft repository key
+  ansible.builtin.rpm_key:
+    state: present
+    key: https://packages.microsoft.com/keys/microsoft.asc
+
+- name: Install packages-microsoft-prod.rpm for Rocky Linux 9
+  ansible.builtin.dnf:
+    name: https://packages.microsoft.com/config/rhel/9.0/packages-microsoft-prod.rpm
+    state: present
+
+- name: Install Azure CLI
+  ansible.builtin.dnf:
+    name: azure-cli
+    state: present

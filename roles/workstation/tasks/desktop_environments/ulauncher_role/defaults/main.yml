@@ -1,0 +1,3 @@
+---
+# ulauncher_role/defaults/main.yml
+ulauncher_version: "latest"

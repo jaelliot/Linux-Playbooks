@@ -1,0 +1,11 @@
+---
+- name: gnome_tracker_clean_cache
+  command: tracker reset -r
+  become: true
+  become_user: jay
+
+- name: gnome_tracker_clean_local_cache
+  command: tracker reset -c
+  become: true
+  become_user: jay
+

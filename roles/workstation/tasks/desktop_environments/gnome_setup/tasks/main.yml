@@ -1,0 +1,36 @@
+---
+- name: Check for installed GNOME packages
+  rpm_key:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - gedit
+    - gnome-backgrounds
+    - gnome-boxes
+    - gnome-control-center
+    - gnome-icon-theme
+    - gnome-power-manager
+    - gnome-remote-desktop
+    - gnome-shell
+    - gnome-shell-extensions
+    - gnome-system-monitor
+    - gnome-terminal
+    - gnome-todo
+    - gnome-tweaks
+    - nautilus
+    - gnome-software-plugin-flatpak
+  register: pkg_check
+  changed_when: false
+
+- name: Install GNOME packages
+  yum:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ pkg_check.results | selectattr('rc', 'defined') | map(attribute='item') }}"
+  when: pkg_check is defined and pkg_check.results | length > 0
+
+- name: Enable and start GDM
+  service:
+    name: gdm
+    enabled: true
+    state: started

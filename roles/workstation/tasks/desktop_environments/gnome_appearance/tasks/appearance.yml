@@ -1,0 +1,69 @@
+---
+- name: Copy wallpaper file
+  tags: gnome, gnome-wallpaper
+  copy:
+    src: "{{ wallpaper_src }}"
+    dest: "{{ wallpaper_dest }}"
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Set wallpaper
+  tags: gnome, gnome-wallpaper
+  become_user: "{{ user }}"
+  dconf:
+    key: "/org/gnome/desktop/background/picture-uri"
+    value: "'file://{{ wallpaper_dest }}'"
+
+- name: Set wallpaper position
+  tags: gnome, gnome-wallpaper
+  become_user: "{{ user }}"
+  dconf:
+    key: "/org/gnome/desktop/background/picture-options"
+    value: "'zoom'"
+
+- name: Copy lock screen background file
+  tags: gnome, gnome-lockscreen
+  copy:
+    src: "{{ lockscreen_src }}"
+    dest: "{{ lockscreen_dest }}"
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Set lock screen background
+  tags: gnome, gnome-lockscreen
+  become_user: "{{ user }}"
+  dconf:
+    key: "/org/gnome/desktop/screensaver/picture-uri"
+    value: "'file://{{ lockscreen_dest }}'"
+
+- name: Set lock screen background position
+  tags: gnome, gnome-lockscreen
+  become_user: "{{ user }}"
+  dconf:
+    key: "/org/gnome/desktop/screensaver/picture-options"
+    value: "'zoom'"
+
+- name: Check if GNOME Terminal is installed
+  command: which gnome-terminal
+  register: gnome_terminal_installed
+  failed_when: gnome_terminal_installed.rc != 0
+  changed_when: false
+  ignore_errors: true
+
+- name: Create an application shortcut for GNOME Terminal on the Desktop
+  copy:
+    dest: "{{ ansible_env.HOME }}/Desktop/gnome-terminal.desktop"
+    content: |
+      [Desktop Entry]
+      Type=Application
+      Encoding=UTF-8
+      Name={{ shortcut_name }}
+      Comment={{ shortcut_comment }}
+      Exec={{ shortcut_exec }}
+      Icon={{ shortcut_icon }}
+      Terminal=false
+      Categories={{ shortcut_categories }}
+  when: gnome_terminal_installed.rc == 0
+  become: no

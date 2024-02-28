@@ -1,0 +1,42 @@
+---
+- name: Check if autofs is already installed
+  ansible.builtin.rpm_key:
+    name: autofs
+    state: present
+  register: autofs_installed
+  failed_when: autofs_installed.rc not in [0, 1]
+  changed_when: false
+  when: autofs
+
+- name: Install autofs package
+  ansible.builtin.package:
+    name: autofs
+    state: present
+  when: autofs and autofs_installed.rc == 1
+
+- name: Ensure autofs service is started and enabled
+  ansible.builtin.service:
+    name: autofs
+    state: started
+    enabled: true
+  when: autofs
+
+- name: Copy auto.master config file
+  ansible.builtin.copy:
+    src: auto.master
+    dest: "{{ autofs_master_config }}"
+    owner: root
+    group: root
+    mode: '0644'
+  when: autofs
+  notify: restart autofs
+
+- name: Copy auto.nfs config file
+  ansible.builtin.copy:
+    src: auto.nfs
+    dest: "{{ autofs_nfs_config }}"
+    owner: root
+    group: root
+    mode: '0644'
+  when: autofs
+  notify: restart autofs
