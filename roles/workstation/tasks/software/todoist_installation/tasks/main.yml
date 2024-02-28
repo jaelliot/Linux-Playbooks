@@ -2,7 +2,7 @@
 # tasks file for todoist_installation
 - name: Check if snapd is installed
   ansible.builtin.package_facts:
-    manager: "auto"
+    manager: auto
 
 - name: Install snapd
   ansible.builtin.yum:
@@ -14,15 +14,15 @@
   ansible.builtin.systemd:
     name: snapd.socket
     state: started
-    enabled: yes
+    enabled: true
   when: "'snapd' not in packages"
 
 - name: Ensure snap core is installed
-  ansible.builtin.shell: snap install core
+  ansible.builtin.command: snap install core
   when: "'snapd' not in packages"
 
 - name: Install Todoist via snap
-  snap:
+  community.general.snap:
     name: todoist
     state: present
   when:
@@ -30,9 +30,9 @@
     - todoist_enabled
 
 - name: Enable Todoist autostart
-  file:
+  ansible.builtin.file:
     src: /var/lib/snapd/desktop/applications/todoist_todoist.desktop
-    dest: "/home/{{ ansible_user_id }}/.config/autostart/todoist_todoist.desktop"
+    dest: /home/{{ ansible_user_id }}/.config/autostart/todoist_todoist.desktop
     owner: "{{ ansible_user_id }}"
     group: "{{ ansible_user_id }}"
     state: link

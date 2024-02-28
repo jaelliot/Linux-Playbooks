@@ -1,8 +1,9 @@
 ---
 - name: Check for installed GNOME packages
-  rpm_key:
-    name: "{{ item }}"
-    state: present
+  ansible.builtin.yum:
+    list: gnome-shell
+  register: gnome_packages
+
   loop:
     - gedit
     - gnome-backgrounds
@@ -19,18 +20,17 @@
     - gnome-tweaks
     - nautilus
     - gnome-software-plugin-flatpak
-  register: pkg_check
   changed_when: false
 
 - name: Install GNOME packages
-  yum:
+  ansible.builtin.dnf:
     name: "{{ item }}"
     state: present
   loop: "{{ pkg_check.results | selectattr('rc', 'defined') | map(attribute='item') }}"
   when: pkg_check is defined and pkg_check.results | length > 0
 
-- name: Enable and start GDM
-  service:
+- name: Ensure the GNOME Display Manager (GDM) is enabled and running
+  ansible.builtin.service:
     name: gdm
-    enabled: true
     state: started
+    enabled: true

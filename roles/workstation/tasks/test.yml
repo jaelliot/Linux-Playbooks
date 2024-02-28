@@ -1,0 +1,7 @@
+---
+- name: Setup Rocky Linux User
+  hosts: localhost  # Adjust as necessary
+  become: true
+  tasks:
+    - import_tasks: roles/workstation/tasks/users/rocky_linux_user_setup/tasks/main.yml
+

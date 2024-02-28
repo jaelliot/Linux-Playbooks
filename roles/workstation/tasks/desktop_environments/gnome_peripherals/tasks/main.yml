@@ -12,72 +12,72 @@
   ansible.builtin.block:
     - name: Enable natural scrolling (mouse)
       ansible.builtin.dconf:
-        key: "/org/gnome/desktop/peripherals/mouse/natural-scroll"
+        key: /org/gnome/desktop/peripherals/mouse/natural-scroll
         value: "true"
 
     - name: Enable natural scrolling (touchpad)
       ansible.builtin.dconf:
-        key: "/org/gnome/desktop/peripherals/touchpad/natural-scroll"
+        key: /org/gnome/desktop/peripherals/touchpad/natural-scroll
         value: "true"
 
     - name: Enable cursor acceleration (mouse)
       ansible.builtin.dconf:
-        key: "/org/gnome/desktop/peripherals/mouse/accel-profile"
+        key: /org/gnome/desktop/peripherals/mouse/accel-profile
         value: "'adaptive'"
 
     - name: Increase cursor speed (mouse)
       ansible.builtin.dconf:
-        key: "/org/gnome/desktop/peripherals/mouse/speed"
+        key: /org/gnome/desktop/peripherals/mouse/speed
         value: "0.59999999999999998"
 
     - name: Increase cursor speed (touchpad)
       ansible.builtin.dconf:
-        key: "/org/gnome/desktop/peripherals/touchpad/speed"
+        key: /org/gnome/desktop/peripherals/touchpad/speed
         value: "0.59999999999999998"
 
     - name: Set manual night-light schedule
       ansible.builtin.dconf:
-        key: "/org/gnome/settings-daemon/plugins/color/night-light-schedule-automatic"
+        key: /org/gnome/settings-daemon/plugins/color/night-light-schedule-automatic
         value: "false"
 
     - name: Set night-light schedule start time
       ansible.builtin.dconf:
-        key: "/org/gnome/settings-daemon/plugins/color/night-light-schedule-from"
+        key: /org/gnome/settings-daemon/plugins/color/night-light-schedule-from
         value: "23.0"
 
     - name: Set night-light schedule stop time
       ansible.builtin.dconf:
-        key: "/org/gnome/settings-daemon/plugins/color/night-light-schedule-to"
+        key: /org/gnome/settings-daemon/plugins/color/night-light-schedule-to
         value: "7.4999999999999982"
 
     - name: Enable night-light
       ansible.builtin.dconf:
-        key: "/org/gnome/settings-daemon/plugins/color/night-light-enabled"
+        key: /org/gnome/settings-daemon/plugins/color/night-light-enabled
         value: "true"
 
     - name: Set power button behavior
       ansible.builtin.dconf:
-        key: "/org/gnome/settings-daemon/plugins/power/power-button-action"
+        key: /org/gnome/settings-daemon/plugins/power/power-button-action
         value: "'suspend'"
 
     - name: Enable automatic suspend while plugged into AC
       ansible.builtin.dconf:
-        key: "/org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-type"
+        key: /org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-type
         value: "'suspend'"
 
     - name: Set timeout for automatic suspend on AC
       ansible.builtin.dconf:
-        key: "/org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-timeout"
+        key: /org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-timeout
         value: "2700"
 
     - name: Enable automatic suspend on battery
       ansible.builtin.dconf:
-        key: "/org/gnome/settings-daemon/plugins/power/sleep-inactive-battery-type"
+        key: /org/gnome/settings-daemon/plugins/power/sleep-inactive-battery-type
         value: "'suspend'"
 
     - name: Set timeout for automatic suspend on battery
       ansible.builtin.dconf:
-        key: "/org/gnome/settings-daemon/plugins/power/sleep-inactive-battery-timeout"
+        key: /org/gnome/settings-daemon/plugins/power/sleep-inactive-battery-timeout
         value: "1500"
   become_user: jay
   become: true

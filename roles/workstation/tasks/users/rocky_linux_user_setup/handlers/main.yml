@@ -1,4 +1,5 @@
 ---
-- name: update_xdg
-  command: xdg-user-dirs-update
+- name: Update_xdg
+  ansible.builtin.command: xdg-user-dirs-update
   become: true
+  changed_when: false

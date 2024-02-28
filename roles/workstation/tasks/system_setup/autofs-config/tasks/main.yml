@@ -1,18 +1,15 @@
 ---
 - name: Check if autofs is already installed
-  ansible.builtin.rpm_key:
-    name: autofs
-    state: present
+  ansible.builtin.debug:
+    msg: "autofs is already installed."
+  when: "'autofs' in ansible_facts.packages"
   register: autofs_installed
-  failed_when: autofs_installed.rc not in [0, 1]
-  changed_when: false
-  when: autofs
 
 - name: Install autofs package
   ansible.builtin.package:
     name: autofs
     state: present
-  when: autofs and autofs_installed.rc == 1
+  when: "'autofs' not in ansible_facts.packages"
 
 - name: Ensure autofs service is started and enabled
   ansible.builtin.service:

@@ -1,6 +1,6 @@
 - name: Update Chrome Policies on Rocky Linux
-  become: yes  # Required to write to /etc/opt/chrome/policies/managed/
-  copy:
+  become: true
+  ansible.builtin.copy:
     dest: /etc/opt/chrome/policies/managed/chrome_policies.json
     content: |
       {

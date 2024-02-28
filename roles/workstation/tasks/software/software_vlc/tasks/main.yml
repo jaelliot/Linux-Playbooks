@@ -1,6 +1,6 @@
 ---
 - name: Check if VLC is already installed
-  command: flatpak list --app | grep org.videolan.VLC
+  ansible.builtin.command: flatpak list --app | grep org.videolan.VLC
   register: vlc_installed
   failed_when: vlc_installed.stderr != ""
   changed_when: false
@@ -9,7 +9,7 @@
   ignore_errors: true
 
 - name: Install VLC using Flatpak
-  flatpak:
+  community.general.flatpak:
     name: org.videolan.VLC
     state: present
     method: user

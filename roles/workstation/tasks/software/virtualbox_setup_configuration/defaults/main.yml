@@ -1,6 +1,6 @@
 ---
 # Default working path for Linux
-working_path: "/tmp/"
+working_path: /tmp/
 virtualbox_package_name: VirtualBox-6.1
 required_packages:
   - wget

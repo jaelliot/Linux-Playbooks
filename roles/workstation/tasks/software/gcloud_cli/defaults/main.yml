@@ -26,4 +26,3 @@ gcp_cli_components:
   - google-cloud-cli-terraform-validator
   - google-cloud-cli-tests
   - kubectl
-

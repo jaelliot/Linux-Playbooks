@@ -12,4 +12,6 @@ nautilus_dconf_settings:
     value: "'true'"
   - key: "/org/gtk/settings/file-chooser/sort-directories-first"
     value: "false"
-
+  - key: "/org/gnome/nautilus/preferences/enable-interactive-search"
+    value: "'true'"
+  

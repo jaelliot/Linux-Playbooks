@@ -1,7 +1,7 @@
 ---
 - name: Ensure user 'jay' has a clean home directory
-  file:
-    path: "/home/jay/{{ item }}"
+  ansible.builtin.file:
+    path: /home/jay/{{ item }}
     state: absent
   loop:
     - examples.desktop
@@ -16,12 +16,12 @@
   become: true
 
 - name: Create personal config directories for 'jay'
-  file:
-    path: "/home/jay/{{ item.dir }}"
+  ansible.builtin.file:
+    path: /home/jay/{{ item.dir }}
     state: directory
     owner: jay
     group: jay
-    mode: '0700'
+    mode: "0700"
   loop:
     - { dir: .config }
     - { dir: .config/autostart }
@@ -44,13 +44,12 @@
   become: true
   tags: [dotfiles, dotfiles-jay]
 
-- name: Copy user-dirs.dirs to 'jay's home directory
-  copy:
+- name: Copy user-dirs.dirs to 'jay's home directory'
+  ansible.builtin.copy:
     src: user-dirs.dirs
     dest: /home/jay/.config/user-dirs.dirs
     owner: jay
     group: jay
-    mode: '0600'
+    mode: "0600"
   notify: update_xdg
   become: true
-  tags: [dotfiles, dotfiles-jay]

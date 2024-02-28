@@ -1,7 +1,7 @@
 ---
 - name: Ensure Flatpak and Applications are Installed on Rocky Linux
   hosts: all
-  become: yes
+  become: true
   tasks:
     - name: Check if Flatpak is installed
       ansible.builtin.rpm_key:
@@ -18,7 +18,7 @@
     - name: Add Flathub repository
       command: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
       args:
-        creates: "/var/lib/flatpak/repo/flathub.trustedkeys.gpg"
+        creates: /var/lib/flatpak/repo/flathub.trustedkeys.gpg
 
     - name: Check if Telegram Desktop is installed
       command: flatpak list --app

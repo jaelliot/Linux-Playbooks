@@ -1,5 +1,6 @@
+---
 - name: Add GCP CLI repository
-  become: yes
+  become: true
   ansible.builtin.blockinfile:
     path: /etc/yum.repos.d/google-cloud-sdk.repo
     block: |
@@ -10,19 +11,18 @@
       gpgcheck=1
       repo_gpgcheck=0
       gpgkey=https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
-    create: yes
+    create: true
   when: gcloud_cli_installed.rc != 0
 
 - name: Install libxcrypt-compat.x86_64 for compatibility
-  become: yes
+  become: true
   ansible.builtin.dnf:
     name: libxcrypt-compat.x86_64
     state: present
 
 - name: Install google-cloud-cli and components
-  become: yes
+  become: true
   ansible.builtin.dnf:
     name: "{{ gcp_cli_components }}"
     state: present
   when: gcloud_cli_installed.rc != 0
-

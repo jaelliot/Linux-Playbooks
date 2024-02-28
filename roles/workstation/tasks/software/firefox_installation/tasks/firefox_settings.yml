@@ -1,11 +1,12 @@
+---
 - name: Ensure Firefox policies directory exists
   ansible.builtin.file:
     path: /usr/lib/firefox/distribution
     state: directory
-  become: yes
+  become: true
 
 - name: Configure Firefox Policies for Settings
   ansible.builtin.copy:
     src: "{{ role_path }}/files/firefox_policies_settings.json"
     dest: /usr/lib/firefox/distribution/policies.json
-  become: yes
+  become: true
