@@ -1,10 +1,3 @@
----
-- name: Check if google-cloud-cli is already installed
-  shell: dnf list installed google-cloud-cli
-  register: gcloud_cli_installed
-  failed_when: gcloud_cli_installed.stderr != '' and 'Error: No matching Packages to list' not in gcloud_cli_installed.stderr
-  changed_when: false
-
 - name: Add GCP CLI repository
   become: yes
   ansible.builtin.blockinfile:
