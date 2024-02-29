@@ -1,0 +1,134 @@
+---
+- name: Setup Rocky Linux 9 Workstation
+  hosts: localhost
+  connection: local
+  become: true
+  gather_facts: true
+
+  tasks:
+    - name: Setup Desktop Environments
+      block:
+        - import_role:
+            name: desktop_environments/gnome_appearance
+        - import_role:
+            name: desktop_environments/gnome_peripherals
+        - import_role:
+            name: desktop_environments/gnome_setup
+        - import_role:
+            name: desktop_environments/nautilus_configuration
+        - import_role:
+            name: desktop_environments/rocky_gnome_settings
+        - import_role:
+            name: desktop_environments/rocky_gnome_tracker
+        - import_role:
+            name: desktop_environments/ulauncher_role
+
+    # System Setup
+    - name: System Setup Tasks
+      block:
+        - import_role:
+            name: system_setup/autofs-config
+        - import_role:
+            name: system_setup/ssh_hardening
+
+    # Users
+    - name: User Configuration
+      block:
+        - import_role:
+            name: users/rocky_linux_user_setup
+
+    # Install Software
+    - name: Install Software Packages
+      block:
+        - import_role:
+            name: software/android_studio_setup
+        - import_role:
+            name: software/boundary_role
+        - import_role:
+            name: software/docker_setup_configuration
+        - import_role:
+            name: software/gparted_role
+        - import_role:
+            name: software/install_minikube
+        - import_role:
+            name: software/my_boto_role
+        - import_role:
+            name: software/realscan_g10_install
+        - import_role:
+            name: software/telegram_install
+        - import_role:
+            name: software/virtualbox_setup_configuration
+        - import_role:
+            name: software/audacious_install
+        - import_role:
+            name: software/caffeine_install
+        - import_role:
+            name: software/epel_wine_setup
+        - import_role:
+            name: software/firefox_installation
+        - import_role:
+            name: software/install_signal_desktop
+        - import_role:
+            name: software/my_lens_role
+        - import_role:
+            name: software/rocky_consul_install
+        - import_role:
+            name: software/terraform_installer
+        - import_role:
+            name: software/thunderbird_installation
+        - import_role:
+            name: software/vscode_setup_configuration
+        - import_role:
+            name: software/aws_cli_installation
+        - import_role:
+            name: software/civu_cli
+        - import_role:
+            name: software/conda_installation
+        - import_role:
+            name: software/gcloud_cli
+        - import_role:
+            name: software/kindle_for_pc
+        - import_role:
+            name: software/my_nomad_role
+        - import_role:
+            name: software/notion_setup
+        - import_role:
+            name: software/rocky_linux_tmux_installer
+        - import_role:
+            name: software/software_vlc
+        - import_role:
+            name: software/todoist_installation
+        - import_role:
+            name: software/zoom_installation
+        - import_role:
+            name: software/azure_cli_install
+        - import_role:
+            name: software/bentoml_install
+        - import_role:
+            name: software/digitalocean_cli
+        - import_role:
+            name: software/git_setup_and_configuration
+        - import_role:
+            name: software/google_chrome_setup
+        - import_role:
+            name: software/linode_cli
+        - import_role:
+            name: software/mamba_installation
+        - import_role:
+            name: software/nvidia_driver_setup
+        - import_role:
+            name: software/packer_install
+        - import_role:
+            name: software/spotify_setup
+        - import_role:
+            name: software/steam_install
+        - import_role:
+            name: software/vagrant_installer
+        - import_role:
+            name: software/vault_installation
+        - import_role:
+            name: software/blender_install
+        - import_role:
+            name: software/discord_client_setup
+        - import_role:
+            name: software/waypoint
