@@ -1,0 +1,17 @@
+---
+- name: Setup Google Chrome and Extensions
+  gather_facts: false
+  tasks:
+    - name: Check if Google Chrome is already installed
+      ansible.builtin.yum:
+        list: google-chrome-stable
+      register: chrome_installed
+      failed_when: "'google-chrome-stable' not in chrome_installed.results"
+      changed_when: false
+      ignore_errors: true
+
+    - name: Install Google Chrome
+      ansible.builtin.yum:
+        name: google-chrome-stable
+        state: present
+      when: chrome_installed is failed

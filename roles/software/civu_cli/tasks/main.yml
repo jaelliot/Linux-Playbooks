@@ -15,8 +15,7 @@
   become: true
 
 - name: Install civu CLI
-  ansible.builtin.command:
+  ansible.builtin.shell:
     cmd: /tmp/civu_install.sh
     creates: /usr/local/bin/civo
-  warn: false
   become: true

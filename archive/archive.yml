@@ -1,0 +1,16 @@
+    - name: Setup Desktop Environments
+    #   block:
+    #     - import_role:
+    #         name: desktop_environments/gnome_appearance
+    #     - import_role:
+    #         name: desktop_environments/gnome_peripherals
+    #     - import_role:
+    #         name: desktop_environments/gnome_setup
+    #     - import_role:
+    #         name: desktop_environments/nautilus_configuration
+    #     - import_role:
+    #         name: desktop_environments/rocky_gnome_settings
+    #     - import_role:
+    #         name: desktop_environments/rocky_gnome_tracker
+    #     - import_role:
+    #         name: desktop_environments/ulauncher_role

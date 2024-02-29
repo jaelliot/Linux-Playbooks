@@ -43,13 +43,3 @@
     - { dir: templates }
   become: true
   tags: [dotfiles, dotfiles-jay]
-
-- name: Copy user-dirs.dirs to 'jay's home directory'
-  ansible.builtin.copy:
-    src: user-dirs.dirs
-    dest: /home/jay/.config/user-dirs.dirs
-    owner: jay
-    group: jay
-    mode: "0600"
-  notify: update_xdg
-  become: true
