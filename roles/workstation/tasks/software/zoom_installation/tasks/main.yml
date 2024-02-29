@@ -1,0 +1,10 @@
+---
+- name: Gather the package facts
+  ansible.builtin.package_facts:
+    manager: "auto"
+
+- name: Install Zoom if not already installed
+  ansible.builtin.dnf:
+    name: https://zoom.us/client/latest/zoom_x86_64.rpm
+    state: present
+  when: "'zoom' not in ansible_facts.packages"

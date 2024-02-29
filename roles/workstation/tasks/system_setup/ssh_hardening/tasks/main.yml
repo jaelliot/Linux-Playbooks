@@ -1,0 +1,18 @@
+---
+- name: Check if sshd_config exists
+  ansible.builtin.stat:
+    path: /etc/ssh/sshd_config
+  register: sshd_config
+
+- name: Configure SSH settings
+  ansible.builtin.lineinfile:
+    dest: /etc/ssh/sshd_config
+    regexp: "{{ item.regexp }}"
+    line: "{{ item.line }}"
+    state: "{{ item.state }}"
+  loop:
+    - { regexp: '^PermitRootLogin', line: 'PermitRootLogin prohibit-password', state: 'present' }
+    - { regexp: '^#?PasswordAuthentication', line: 'PasswordAuthentication no', state: 'present' }
+    - { regexp: '^Port', line: 'Port {{ sshd_port }}', state: 'present' }
+  when: sshd_config.stat.exists
+  notify: restart ssh
