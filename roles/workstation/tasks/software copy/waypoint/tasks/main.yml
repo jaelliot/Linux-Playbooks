@@ -1,0 +1,16 @@
+---
+- name: Install yum-utils
+  ansible.builtin.yum:
+    name: "{{ yum_utils_package }}"
+    state: present
+
+- name: Add HashiCorp YUM repository
+  ansible.builtin.get_url:
+    url: "{{ waypoint_repo_url }}"
+    dest: /etc/yum.repos.d/hashicorp.repo
+  when: ansible_os_family == "RedHat"
+
+- name: Install Waypoint
+  ansible.builtin.yum:
+    name: "{{ waypoint_package }}"
+    state: latest

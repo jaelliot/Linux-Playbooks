@@ -1,31 +1,22 @@
 ---
-- name: Check internet connectivity
-  command: ping -c 1 8.8.8.8
-  register: ping_result
-  failed_when: ping_result.rc != 0
-  ignore_errors: yes
-  tags: 
-    - always
-
 - block:
     - name: Ensure wget and other required tools are installed
-      dnf:
+      ansible.builtin.dnf:
         name: "{{ required_packages }}"
         state: present
 
     - name: Download VirtualBox repository file
-      get_url:
+      ansible.builtin.get_url:
         url: "{{ virtualbox_repo_url }}"
         dest: "{{ virtualbox_repo_dest }}"
-      when: ping_result.rc == 0
+        mode: '0644'
 
     - name: Install VirtualBox
-      dnf:
+      ansible.builtin.dnf:
         name: "{{ virtualbox_package_name }}"
         state: present
-      when: ping_result.rc == 0
 
   rescue:
     - name: Print failure message
-      debug:
-        msg: "Internet connectivity issue, unable to proceed with installation."
+      ansible.builtin.debug:
+        msg: "Issue encountered during VirtualBox installation."

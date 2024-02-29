@@ -1,4 +1,7 @@
 ---
+# defaults/main.yml
+# Ensure there are no unnecessary blank lines
+
 # tasks/main.yml
 - name: Check if Conda is already installed
   ansible.builtin.command: "{{ conda_install_path }}/bin/conda --version"
@@ -10,6 +13,7 @@
   ansible.builtin.get_url:
     url: https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
     dest: /tmp/miniconda.sh
+    mode: '0755' # Set appropriate file permissions
   when: conda_version_check is failed
 
 - name: Install Conda
@@ -23,4 +27,5 @@
     path: /etc/profile.d/conda.sh
     line: export PATH="{{ conda_install_path }}/bin:$PATH"
     create: true
+    mode: '0644' # Set appropriate file permissions
   when: conda_version_check is failed

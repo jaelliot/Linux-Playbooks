@@ -12,4 +12,3 @@
     name: "{{ tmux_package_name }}"
     state: present
   when: tmux_installed.rc != 0
-

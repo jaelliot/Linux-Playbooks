@@ -21,9 +21,10 @@
     state: present
 
 - name: Download Steam RPM package
-  get_url:
+  ansible.builtin.get_url:
     url: https://steamcdn-a.akamaihd.net/client/installer/steam_latest.rpm
     dest: /tmp/steam_latest.rpm
+    mode: '0644'
 
 - name: Install Steam
   ansible.builtin.yum:

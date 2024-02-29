@@ -1,16 +1,17 @@
 ---
 - name: Install yum-utils
-  yum:
+  ansible.builtin.yum:
     name: yum-utils
     state: present
 
 - name: Add HashiCorp YUM repository
-  get_url:
+  ansible.builtin.get_url:
     url: https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
     dest: /etc/yum.repos.d/hashicorp.repo
+    mode: '0644'
   when: ansible_os_family == "RedHat"
 
 - name: Install Nomad
-  yum:
+  ansible.builtin.yum:
     name: nomad
-    state: latest
+    state: present

@@ -15,5 +15,5 @@
     method: user
   become: true
   become_user: jay
-  when: vlc_installed.rc != 0 and vlc is defined and vlc == true
+  when: vlc_installed.rc != 0 and vlc_installed.stdout == ""
   tags: [packages, flatpak, vlc, workstation-packages]

@@ -1,26 +1,24 @@
 ---
 - name: Check if Flatpak is installed
-  command: flatpak --version
+  ansible.builtin.command: flatpak --version
   register: flatpak_installed
   ignore_errors: true
+  changed_when: false
 
 - name: Install Flatpak
-  yum:
+  ansible.builtin.yum:
     name: flatpak
     state: present
-  when: flatpak_installed is failed
+  when: flatpak_installed.rc != 0
 
 - name: Add Flathub repository
-  command: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+  ansible.builtin.command: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
   become: true
+  changed_when: false
 
 - name: Install OpenLens
-  command: flatpak install --noninteractive --assumeyes flathub dev.k8slens.OpenLens
+  ansible.builtin.command: flatpak install --noninteractive --assumeyes flathub dev.k8slens.OpenLens
   become: true
   register: openlens_installation
   changed_when: "'Installing' in openlens_installation.stdout"
-
-- name: Run OpenLens (Example)
-  command: flatpak run --filesystem=/path/to/your/config:ro dev.k8slens.OpenLens
-  become: true
-  when: openlens_installation is changed
+  notify: Run OpenLens

@@ -1,0 +1,52 @@
+---
+- name: Ensure dependencies are present
+  package:
+    name:
+      - wget
+      - tar
+    state: present
+  become: true
+
+- name: Check if doctl is already installed
+  command: doctl version
+  register: doctl_version_check
+  failed_when: false
+  changed_when: false
+  ignore_errors: true
+
+- name: Download doctl binary
+  get_url:
+    url: "{{ doctl_download_url }}"
+    dest: "/tmp/doctl-{{ doctl_version }}-linux-{{ doctl_arch }}.tar.gz"
+  when: doctl_version_check.rc != 0
+
+- name: Extract doctl binary
+  ansible.builtin.unarchive:
+    src: "/tmp/doctl-{{ doctl_version }}-linux-{{ doctl_arch }}.tar.gz"
+    dest: "/tmp"
+    remote_src: yes
+    creates: "/tmp/doctl"
+  when: doctl_version_check.rc != 0
+
+- name: Move doctl to /usr/local/bin
+  ansible.builtin.copy:
+    src: "/tmp/doctl"
+    dest: "/usr/local/bin/doctl"
+    mode: '0755'
+    remote_src: true
+  become: true
+  when: doctl_version_check.rc != 0
+
+- name: Ensure doctl is executable
+  file:
+    path: /usr/local/bin/doctl
+    mode: '0755'
+  become: true
+  when: doctl_version_check.rc != 0
+
+- name: Clean up downloaded archive
+  file:
+    path: "/tmp/doctl-{{ doctl_version }}-linux-{{ doctl_arch }}.tar.gz"
+    state: absent
+  when: doctl_version_check.rc != 0
+

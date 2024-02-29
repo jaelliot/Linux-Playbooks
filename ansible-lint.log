@@ -1,0 +1,2456 @@
+]8;id=291487;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (copy).[0m
+[34mworkstation/tasks/desktop_environments/gnome_appearance/tasks/appearance.yml[0m:2 [2mUse `ansible.builtin.copy` or `ansible.legacy.copy` instead.[0m
+
+]8;id=415000;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[octal-values][0m]8;;\[2m:[0m [91mForbidden implicit octal value "0644"[0m
+[34mworkstation/tasks/desktop_environments/gnome_appearance/tasks/appearance.yml[0m:9
+
+]8;id=486885;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action][0m]8;;\[2m:[0m [91mUse FQCN for module actions, such `community.general.dconf`.[0m
+[34mworkstation/tasks/desktop_environments/gnome_appearance/tasks/appearance.yml[0m:11 [2mAction `dconf` is not FQCN.[0m
+
+]8;id=634657;https://ansible.readthedocs.io/projects/lint/rules/partial-become/\[1;91mpartial-become[task][0m]8;;\[2m:[0m [91m``become_user`` should have a corresponding ``become`` at the play or task level.[0m
+[34mworkstation/tasks/desktop_environments/gnome_appearance/tasks/appearance.yml[0m:11 [2mTask/Handler: Set wallpaper[0m
+
+]8;id=805339;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action][0m]8;;\[2m:[0m [91mUse FQCN for module actions, such `community.general.dconf`.[0m
+[34mworkstation/tasks/desktop_environments/gnome_appearance/tasks/appearance.yml[0m:18 [2mAction `dconf` is not FQCN.[0m
+
+]8;id=272324;https://ansible.readthedocs.io/projects/lint/rules/partial-become/\[1;91mpartial-become[task][0m]8;;\[2m:[0m [91m``become_user`` should have a corresponding ``become`` at the play or task level.[0m
+[34mworkstation/tasks/desktop_environments/gnome_appearance/tasks/appearance.yml[0m:18 [2mTask/Handler: Set wallpaper position[0m
+
+]8;id=127671;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (copy).[0m
+[34mworkstation/tasks/desktop_environments/gnome_appearance/tasks/appearance.yml[0m:25 [2mUse `ansible.builtin.copy` or `ansible.legacy.copy` instead.[0m
+
+]8;id=605040;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[octal-values][0m]8;;\[2m:[0m [91mForbidden implicit octal value "0644"[0m
+[34mworkstation/tasks/desktop_environments/gnome_appearance/tasks/appearance.yml[0m:32
+
+]8;id=586872;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action][0m]8;;\[2m:[0m [91mUse FQCN for module actions, such `community.general.dconf`.[0m
+[34mworkstation/tasks/desktop_environments/gnome_appearance/tasks/appearance.yml[0m:34 [2mAction `dconf` is not FQCN.[0m
+
+]8;id=45050;https://ansible.readthedocs.io/projects/lint/rules/partial-become/\[1;91mpartial-become[task][0m]8;;\[2m:[0m [91m``become_user`` should have a corresponding ``become`` at the play or task level.[0m
+[34mworkstation/tasks/desktop_environments/gnome_appearance/tasks/appearance.yml[0m:34 [2mTask/Handler: Set lock screen background[0m
+
+]8;id=918097;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action][0m]8;;\[2m:[0m [91mUse FQCN for module actions, such `community.general.dconf`.[0m
+[34mworkstation/tasks/desktop_environments/gnome_appearance/tasks/appearance.yml[0m:41 [2mAction `dconf` is not FQCN.[0m
+
+]8;id=108310;https://ansible.readthedocs.io/projects/lint/rules/partial-become/\[1;91mpartial-become[task][0m]8;;\[2m:[0m [91m``become_user`` should have a corresponding ``become`` at the play or task level.[0m
+[34mworkstation/tasks/desktop_environments/gnome_appearance/tasks/appearance.yml[0m:41 [2mTask/Handler: Set lock screen background position[0m
+
+]8;id=469727;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/desktop_environments/gnome_appearance/tasks/appearance.yml[0m:48 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=292498;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (copy).[0m
+[34mworkstation/tasks/desktop_environments/gnome_appearance/tasks/appearance.yml[0m:55 [2mUse `ansible.builtin.copy` or `ansible.legacy.copy` instead.[0m
+
+]8;id=317172;https://ansible.readthedocs.io/projects/lint/rules/risky-file-permissions/\[1;91mrisky-file-permissions[0m]8;;\[2m:[0m [91mFile permissions unset or incorrect.[0m
+[34mworkstation/tasks/desktop_environments/gnome_appearance/tasks/appearance.yml[0m:55 [2mTask/Handler: Create an application shortcut for GNOME Terminal on the Desktop[0m
+
+]8;id=772881;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/desktop_environments/gnome_appearance/tasks/appearance.yml[0m:69
+
+]8;id=581560;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/desktop_environments/gnome_peripherals/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=749987;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/desktop_environments/gnome_peripherals/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=772941;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/desktop_environments/gnome_setup/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=254069;https://ansible.readthedocs.io/projects/lint/rules/args/\[1;33margs[module][0m]8;;\[2m:[0m [33mmissing required arguments: key[0m [2;33m(warning)[0m
+[34mworkstation/tasks/desktop_environments/gnome_setup/tasks/main.yml[0m:2 [2mTask/Handler: Check for installed GNOME packages[0m
+
+]8;id=811808;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (rpm_key).[0m
+[34mworkstation/tasks/desktop_environments/gnome_setup/tasks/main.yml[0m:2 [2mUse `ansible.builtin.rpm_key` or `ansible.legacy.rpm_key` instead.[0m
+
+]8;id=799074;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum).[0m
+[34mworkstation/tasks/desktop_environments/gnome_setup/tasks/main.yml[0m:25 [2mUse `ansible.builtin.yum` or `ansible.legacy.yum` instead.[0m
+
+]8;id=524989;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (service).[0m
+[34mworkstation/tasks/desktop_environments/gnome_setup/tasks/main.yml[0m:32 [2mUse `ansible.builtin.service` or `ansible.legacy.service` instead.[0m
+
+]8;id=368575;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/desktop_environments/gnome_setup/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=289228;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (1 > 0)[0m
+[34mworkstation/tasks/desktop_environments/nautilus_configuration/defaults/main.yml[0m:15
+
+]8;id=948190;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/desktop_environments/nautilus_configuration/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=664260;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[canonical][0m]8;;\[2m:[0m [91mYou should use canonical module name `community.general.dconf` instead of `ansible.builtin.dconf`.[0m
+[34mworkstation/tasks/desktop_environments/nautilus_configuration/tasks/main.yml[0m:12 [2mTask/Handler: Apply Nautilus configurations[0m
+
+]8;id=883275;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (1 > 0)[0m
+[34mworkstation/tasks/desktop_environments/nautilus_configuration/tasks/main.yml[0m:20
+
+]8;id=769180;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/desktop_environments/nautilus_configuration/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=658937;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/desktop_environments/rocky_gnome_settings/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=455027;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[line-length][0m]8;;\[2m:[0m [91mLine too long (270 > 160 characters)[0m
+[34mworkstation/tasks/desktop_environments/rocky_gnome_settings/tasks/main.yml[0m:78
+
+]8;id=97817;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/desktop_environments/rocky_gnome_settings/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=109949;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/desktop_environments/rocky_gnome_tracker/handlers/main.yml[0m:2 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=231091;https://ansible.readthedocs.io/projects/lint/rules/name/\[1;91mname[casing][0m]8;;\[2m:[0m [91mAll names should start with an uppercase letter.[0m
+[34mworkstation/tasks/desktop_environments/rocky_gnome_tracker/handlers/main.yml[0m:2 [2mTask/Handler: gnome_tracker_clean_cache[0m
+
+]8;id=722300;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/desktop_environments/rocky_gnome_tracker/handlers/main.yml[0m:2 [2mTask/Handler: gnome_tracker_clean_cache[0m
+
+]8;id=910349;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/desktop_environments/rocky_gnome_tracker/handlers/main.yml[0m:7 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=112449;https://ansible.readthedocs.io/projects/lint/rules/name/\[1;91mname[casing][0m]8;;\[2m:[0m [91mAll names should start with an uppercase letter.[0m
+[34mworkstation/tasks/desktop_environments/rocky_gnome_tracker/handlers/main.yml[0m:7 [2mTask/Handler: gnome_tracker_clean_local_cache[0m
+
+]8;id=233407;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/desktop_environments/rocky_gnome_tracker/handlers/main.yml[0m:7 [2mTask/Handler: gnome_tracker_clean_local_cache[0m
+
+]8;id=105995;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (1 > 0)[0m
+[34mworkstation/tasks/desktop_environments/rocky_gnome_tracker/handlers/main.yml[0m:11
+
+]8;id=85465;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/desktop_environments/rocky_gnome_tracker/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=362381;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action][0m]8;;\[2m:[0m [91mUse FQCN for module actions, such `community.general.dconf`.[0m
+[34mworkstation/tasks/desktop_environments/rocky_gnome_tracker/tasks/main.yml[0m:8 [2mAction `dconf` is not FQCN.[0m
+
+]8;id=530152;https://ansible.readthedocs.io/projects/lint/rules/name/\[1;91mname[casing][0m]8;;\[2m:[0m [91mAll names should start with an uppercase letter.[0m
+[34mworkstation/tasks/desktop_environments/rocky_gnome_tracker/tasks/main.yml[0m:8 [2mTask/Handler: gnome | tracker | disable indexing while running on battery[0m
+
+]8;id=26705;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action][0m]8;;\[2m:[0m [91mUse FQCN for module actions, such `community.general.dconf`.[0m
+[34mworkstation/tasks/desktop_environments/rocky_gnome_tracker/tasks/main.yml[0m:16 [2mAction `dconf` is not FQCN.[0m
+
+]8;id=802724;https://ansible.readthedocs.io/projects/lint/rules/name/\[1;91mname[casing][0m]8;;\[2m:[0m [91mAll names should start with an uppercase letter.[0m
+[34mworkstation/tasks/desktop_environments/rocky_gnome_tracker/tasks/main.yml[0m:16 [2mTask/Handler: gnome | tracker | set ignored directories[0m
+
+]8;id=155745;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (1 > 0)[0m
+[34mworkstation/tasks/desktop_environments/rocky_gnome_tracker/tasks/main.yml[0m:23
+
+]8;id=415704;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/desktop_environments/rocky_gnome_tracker/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=363175;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/desktop_environments/ulauncher_role/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=512422;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/desktop_environments/ulauncher_role/tasks/main.yml[0m:3 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=526683;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/desktop_environments/ulauncher_role/tasks/main.yml[0m:8
+
+]8;id=661662;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (dnf).[0m
+[34mworkstation/tasks/desktop_environments/ulauncher_role/tasks/main.yml[0m:10 [2mUse `ansible.builtin.dnf` or `ansible.legacy.dnf` instead.[0m
+
+]8;id=496656;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (pip).[0m
+[34mworkstation/tasks/desktop_environments/ulauncher_role/tasks/main.yml[0m:19 [2mUse `ansible.builtin.pip` or `ansible.legacy.pip` instead.[0m
+
+]8;id=684462;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (template).[0m
+[34mworkstation/tasks/desktop_environments/ulauncher_role/tasks/main.yml[0m:26 [2mUse `ansible.builtin.template` or `ansible.legacy.template` instead.[0m
+
+]8;id=681200;https://ansible.readthedocs.io/projects/lint/rules/risky-file-permissions/\[1;91mrisky-file-permissions[0m]8;;\[2m:[0m [91mFile permissions unset or incorrect.[0m
+[34mworkstation/tasks/desktop_environments/ulauncher_role/tasks/main.yml[0m:26 [2mTask/Handler: Create Ulauncher desktop entry[0m
+
+]8;id=51219;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (1 > 0)[0m
+[34mworkstation/tasks/desktop_environments/ulauncher_role/tasks/main.yml[0m:31
+
+]8;id=667724;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/desktop_environments/ulauncher_role/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=200170;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[line-length][0m]8;;\[2m:[0m [91mLine too long (175 > 160 characters)[0m
+[34mworkstation/tasks/software/android_studio_setup/defaults/main.yml[0m:3
+
+]8;id=288070;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/android_studio_setup/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=276797;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (dnf).[0m
+[34mworkstation/tasks/software/android_studio_setup/tasks/main.yml[0m:2 [2mUse `ansible.builtin.dnf` or `ansible.legacy.dnf` instead.[0m
+
+]8;id=846816;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (stat).[0m
+[34mworkstation/tasks/software/android_studio_setup/tasks/main.yml[0m:9 [2mUse `ansible.builtin.stat` or `ansible.legacy.stat` instead.[0m
+
+]8;id=836374;https://ansible.readthedocs.io/projects/lint/rules/key-order/\[1;91mkey-order[task][0m]8;;\[2m:[0m [91mYou can improve the task key order to: when, block[0m
+[34mworkstation/tasks/software/android_studio_setup/tasks/main.yml[0m:14 [2mTask/Handler: block/always/rescue [0m
+
+]8;id=974631;https://ansible.readthedocs.io/projects/lint/rules/name/\[1;91mname[missing][0m]8;;\[2m:[0m [91mAll tasks should be named.[0m
+[34mworkstation/tasks/software/android_studio_setup/tasks/main.yml[0m:14 [2mTask/Handler: block/always/rescue [0m
+
+]8;id=374412;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (get_url).[0m
+[34mworkstation/tasks/software/android_studio_setup/tasks/main.yml[0m:15 [2mUse `ansible.builtin.get_url` or `ansible.legacy.get_url` instead.[0m
+
+]8;id=923260;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[indentation][0m]8;;\[2m:[0m [91mWrong indentation: expected 4 but found 2[0m
+[34mworkstation/tasks/software/android_studio_setup/tasks/main.yml[0m:15
+
+]8;id=593371;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/android_studio_setup/tasks/main.yml[0m:26
+
+]8;id=251978;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (template).[0m
+[34mworkstation/tasks/software/android_studio_setup/tasks/main.yml[0m:30 [2mUse `ansible.builtin.template` or `ansible.legacy.template` instead.[0m
+
+]8;id=141421;https://ansible.readthedocs.io/projects/lint/rules/risky-file-permissions/\[1;91mrisky-file-permissions[0m]8;;\[2m:[0m [91mFile permissions unset or incorrect.[0m
+[34mworkstation/tasks/software/android_studio_setup/tasks/main.yml[0m:30 [2mTask/Handler: Set Android Studio environment variables[0m
+
+]8;id=861291;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[new-line-at-end-of-file][0m]8;;\[2m:[0m [91mNo new line character at the end of file[0m
+[34mworkstation/tasks/software/android_studio_setup/tasks/main.yml[0m:35
+
+]8;id=716876;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/android_studio_setup/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=937980;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (1 > 0)[0m
+[34mworkstation/tasks/software/audacious_install/defaults/main.yml[0m:3
+
+]8;id=7185;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'Your Name', 'description': 'Role to install Audacious on Rocky Linux', 'company': 'Your Company', 'platforms': [{'name': 'EL', 'versions': [8, 9]}], 'galaxy_tags': ['software', 'workstation', 'audacious', 'flatpak']}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/audacious_install/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=760018;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/audacious_install/tasks/main.yml[0m:2 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=747959;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (package).[0m
+[34mworkstation/tasks/software/audacious_install/tasks/main.yml[0m:8 [2mUse `ansible.builtin.package` or `ansible.legacy.package` instead.[0m
+
+]8;id=374769;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action][0m]8;;\[2m:[0m [91mUse FQCN for module actions, such `community.general.flatpak`.[0m
+[34mworkstation/tasks/software/audacious_install/tasks/main.yml[0m:15 [2mAction `flatpak` is not FQCN.[0m
+
+]8;id=465344;https://ansible.readthedocs.io/projects/lint/rules/partial-become/\[1;91mpartial-become[task][0m]8;;\[2m:[0m [91m``become_user`` should have a corresponding ``become`` at the play or task level.[0m
+[34mworkstation/tasks/software/audacious_install/tasks/main.yml[0m:15 [2mTask/Handler: Install Audacious using Flatpak[0m
+
+]8;id=591501;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/audacious_install/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=174829;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/aws_cli_installation/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=423659;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/aws_cli_installation/tasks/main.yml[0m:4 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=583683;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/aws_cli_installation/tasks/main.yml[0m:4 [2mTask/Handler: Check if AWS CLI is already installed[0m
+
+]8;id=842734;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (get_url).[0m
+[34mworkstation/tasks/software/aws_cli_installation/tasks/main.yml[0m:9 [2mUse `ansible.builtin.get_url` or `ansible.legacy.get_url` instead.[0m
+
+]8;id=409542;https://ansible.readthedocs.io/projects/lint/rules/risky-file-permissions/\[1;91mrisky-file-permissions[0m]8;;\[2m:[0m [91mFile permissions unset or incorrect.[0m
+[34mworkstation/tasks/software/aws_cli_installation/tasks/main.yml[0m:9 [2mTask/Handler: Download AWS CLI v2 installer[0m
+
+]8;id=436723;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/aws_cli_installation/tasks/main.yml[0m:19
+
+]8;id=920757;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/aws_cli_installation/tasks/main.yml[0m:26
+
+]8;id=231979;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/aws_cli_installation/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=892657;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/azure_cli_install/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=875291;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/azure_cli_install/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=263006;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (1 > 0)[0m
+[34mworkstation/tasks/software/bentoml_install/defaults/main.yml[0m:4
+
+]8;id=566450;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/bentoml_install/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=162277;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (dnf).[0m
+[34mworkstation/tasks/software/bentoml_install/tasks/main.yml[0m:3 [2mUse `ansible.builtin.dnf` or `ansible.legacy.dnf` instead.[0m
+
+]8;id=263047;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (pip).[0m
+[34mworkstation/tasks/software/bentoml_install/tasks/main.yml[0m:10 [2mUse `ansible.builtin.pip` or `ansible.legacy.pip` instead.[0m
+
+]8;id=125567;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/bentoml_install/tasks/main.yml[0m:14
+
+]8;id=376127;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/bentoml_install/tasks/main.yml[0m:16 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=409636;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (debug).[0m
+[34mworkstation/tasks/software/bentoml_install/tasks/main.yml[0m:21 [2mUse `ansible.builtin.debug` or `ansible.legacy.debug` instead.[0m
+
+]8;id=627826;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/bentoml_install/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=681294;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (1 > 0)[0m
+[34mworkstation/tasks/software/boundary_role/defaults/main.yml[0m:4
+
+]8;id=626692;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/boundary_role/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=571403;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum).[0m
+[34mworkstation/tasks/software/boundary_role/tasks/main.yml[0m:4 [2mUse `ansible.builtin.yum` or `ansible.legacy.yum` instead.[0m
+
+]8;id=506381;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (get_url).[0m
+[34mworkstation/tasks/software/boundary_role/tasks/main.yml[0m:9 [2mUse `ansible.builtin.get_url` or `ansible.legacy.get_url` instead.[0m
+
+]8;id=174801;https://ansible.readthedocs.io/projects/lint/rules/risky-file-permissions/\[1;91mrisky-file-permissions[0m]8;;\[2m:[0m [91mFile permissions unset or incorrect.[0m
+[34mworkstation/tasks/software/boundary_role/tasks/main.yml[0m:9 [2mTask/Handler: Add HashiCorp repository[0m
+
+]8;id=695035;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum).[0m
+[34mworkstation/tasks/software/boundary_role/tasks/main.yml[0m:15 [2mUse `ansible.builtin.yum` or `ansible.legacy.yum` instead.[0m
+
+]8;id=272616;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/boundary_role/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=129471;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/caffeine_install/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=793155;https://ansible.readthedocs.io/projects/lint/rules/command-instead-of-module/\[1;91mcommand-instead-of-module[0m]8;;\[2m:[0m [91mrpm used in place of yum or rpm_key module[0m
+[34mworkstation/tasks/software/caffeine_install/tasks/main.yml[0m:3 [2mTask/Handler: Check if caffeine is installed[0m
+
+]8;id=949853;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/caffeine_install/tasks/main.yml[0m:3 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=653957;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (package).[0m
+[34mworkstation/tasks/software/caffeine_install/tasks/main.yml[0m:10 [2mUse `ansible.builtin.package` or `ansible.legacy.package` instead.[0m
+
+]8;id=11359;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[trailing-spaces][0m]8;;\[2m:[0m [91mTrailing spaces[0m
+[34mworkstation/tasks/software/caffeine_install/tasks/main.yml[0m:15
+
+]8;id=676099;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/caffeine_install/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=198832;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/civu_cli/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=954539;https://ansible.readthedocs.io/projects/lint/rules/command-instead-of-module/\[1;91mcommand-instead-of-module[0m]8;;\[2m:[0m [91mcurl used in place of get_url or uri module[0m
+[34mworkstation/tasks/software/civu_cli/tasks/main.yml[0m:10 [2mTask/Handler: Install civu CLI[0m
+
+]8;id=557587;https://ansible.readthedocs.io/projects/lint/rules/risky-shell-pipe/\[1;91mrisky-shell-pipe[0m]8;;\[2m:[0m [91mShells that use pipes should set the pipefail option.[0m
+[34mworkstation/tasks/software/civu_cli/tasks/main.yml[0m:10 [2mTask/Handler: Install civu CLI[0m
+
+]8;id=177870;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/civu_cli/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=825599;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (1 > 0)[0m
+[34mworkstation/tasks/software/conda_installation/defaults/main.yml[0m:5
+
+]8;id=523669;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your_name', 'description': 'Ansible role for installing Conda on Rocky Linux 9', 'platforms': [{'name': 'EL', 'versions': [9]}], 'galaxy_tags': ['linux', 'conda', 'python', 'development']}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/conda_installation/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=79527;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[indentation][0m]8;;\[2m:[0m [91mWrong indentation: expected 4 but found 2[0m
+[34mworkstation/tasks/software/conda_installation/meta/main.yml[0m:6
+
+]8;id=651632;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[indentation][0m]8;;\[2m:[0m [91mWrong indentation: expected 6 but found 4[0m
+[34mworkstation/tasks/software/conda_installation/meta/main.yml[0m:8
+
+]8;id=881807;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/conda_installation/tasks/main.yml[0m:3 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=487538;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/conda_installation/tasks/main.yml[0m:6
+
+]8;id=656281;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (get_url).[0m
+[34mworkstation/tasks/software/conda_installation/tasks/main.yml[0m:9 [2mUse `ansible.builtin.get_url` or `ansible.legacy.get_url` instead.[0m
+
+]8;id=827298;https://ansible.readthedocs.io/projects/lint/rules/risky-file-permissions/\[1;91mrisky-file-permissions[0m]8;;\[2m:[0m [91mFile permissions unset or incorrect.[0m
+[34mworkstation/tasks/software/conda_installation/tasks/main.yml[0m:9 [2mTask/Handler: Download Conda installer script[0m
+
+]8;id=878518;https://ansible.readthedocs.io/projects/lint/rules/command-instead-of-shell/\[1;91mcommand-instead-of-shell[0m]8;;\[2m:[0m [91mUse shell only when shell functionality is required.[0m
+[34mworkstation/tasks/software/conda_installation/tasks/main.yml[0m:15 [2mTask/Handler: Install Conda[0m
+
+]8;id=938172;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (shell).[0m
+[34mworkstation/tasks/software/conda_installation/tasks/main.yml[0m:15 [2mUse `ansible.builtin.shell` or `ansible.legacy.shell` instead.[0m
+
+]8;id=692606;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (lineinfile).[0m
+[34mworkstation/tasks/software/conda_installation/tasks/main.yml[0m:21 [2mUse `ansible.builtin.lineinfile` or `ansible.legacy.lineinfile` instead.[0m
+
+]8;id=329500;https://ansible.readthedocs.io/projects/lint/rules/risky-file-permissions/\[1;91mrisky-file-permissions[0m]8;;\[2m:[0m [91mFile permissions unset or incorrect.[0m
+[34mworkstation/tasks/software/conda_installation/tasks/main.yml[0m:21 [2mTask/Handler: Ensure Conda is in PATH[0m
+
+]8;id=692132;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/conda_installation/tasks/main.yml[0m:25
+
+]8;id=908706;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (1 > 0)[0m
+[34mworkstation/tasks/software/conda_installation/tasks/main.yml[0m:27
+
+]8;id=987315;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/conda_installation/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=317699;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/digitalocean_cli/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=74314;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (package).[0m
+[34mworkstation/tasks/software/digitalocean_cli/tasks/main.yml[0m:2 [2mUse `ansible.builtin.package` or `ansible.legacy.package` instead.[0m
+
+]8;id=732476;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/digitalocean_cli/tasks/main.yml[0m:10 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=386776;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (get_url).[0m
+[34mworkstation/tasks/software/digitalocean_cli/tasks/main.yml[0m:17 [2mUse `ansible.builtin.get_url` or `ansible.legacy.get_url` instead.[0m
+
+]8;id=647585;https://ansible.readthedocs.io/projects/lint/rules/risky-file-permissions/\[1;91mrisky-file-permissions[0m]8;;\[2m:[0m [91mFile permissions unset or incorrect.[0m
+[34mworkstation/tasks/software/digitalocean_cli/tasks/main.yml[0m:17 [2mTask/Handler: Download doctl binary[0m
+
+]8;id=412072;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/digitalocean_cli/tasks/main.yml[0m:27
+
+]8;id=814628;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (file).[0m
+[34mworkstation/tasks/software/digitalocean_cli/tasks/main.yml[0m:40 [2mUse `ansible.builtin.file` or `ansible.legacy.file` instead.[0m
+
+]8;id=313646;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (file).[0m
+[34mworkstation/tasks/software/digitalocean_cli/tasks/main.yml[0m:47 [2mUse `ansible.builtin.file` or `ansible.legacy.file` instead.[0m
+
+]8;id=11621;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (1 > 0)[0m
+[34mworkstation/tasks/software/digitalocean_cli/tasks/main.yml[0m:52
+
+]8;id=940456;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/digitalocean_cli/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=565359;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (1 > 0)[0m
+[34mworkstation/tasks/software/digitalocean_cli/vars/main.yml[0m:5
+
+]8;id=727451;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/discord_client_setup/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=712920;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action][0m]8;;\[2m:[0m [91mUse FQCN for module actions, such `community.general.flatpak_remote`.[0m
+[34mworkstation/tasks/software/discord_client_setup/tasks/main.yml[0m:9 [2mAction `flatpak_remote` is not FQCN.[0m
+
+]8;id=936478;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/discord_client_setup/tasks/main.yml[0m:14
+
+]8;id=587652;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action][0m]8;;\[2m:[0m [91mUse FQCN for module actions, such `community.general.flatpak`.[0m
+[34mworkstation/tasks/software/discord_client_setup/tasks/main.yml[0m:16 [2mAction `flatpak` is not FQCN.[0m
+
+]8;id=512257;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/discord_client_setup/tasks/main.yml[0m:22
+
+]8;id=130302;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/discord_client_setup/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=182110;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/docker_setup_configuration/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=401553;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (dnf).[0m
+[34mworkstation/tasks/software/docker_setup_configuration/tasks/main.yml[0m:2 [2mUse `ansible.builtin.dnf` or `ansible.legacy.dnf` instead.[0m
+
+]8;id=837206;https://ansible.readthedocs.io/projects/lint/rules/risky-file-permissions/\[1;91mrisky-file-permissions[0m]8;;\[2m:[0m [91mFile permissions unset or incorrect.[0m
+[34mworkstation/tasks/software/docker_setup_configuration/tasks/main.yml[0m:7 [2mTask/Handler: Set up the Docker repository[0m
+
+]8;id=288166;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (dnf).[0m
+[34mworkstation/tasks/software/docker_setup_configuration/tasks/main.yml[0m:12 [2mUse `ansible.builtin.dnf` or `ansible.legacy.dnf` instead.[0m
+
+]8;id=863255;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (systemd).[0m
+[34mworkstation/tasks/software/docker_setup_configuration/tasks/main.yml[0m:19 [2mUse `ansible.builtin.systemd` or `ansible.legacy.systemd` instead.[0m
+
+]8;id=823575;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/docker_setup_configuration/tasks/main.yml[0m:23
+
+]8;id=182575;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/docker_setup_configuration/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=448191;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/epel_wine_setup/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=461123;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/epel_wine_setup/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=259773;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/firefox_installation/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=465404;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/firefox_installation/tasks/firefox_extension.yml[0m:6
+
+]8;id=976922;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[trailing-spaces][0m]8;;\[2m:[0m [91mTrailing spaces[0m
+[34mworkstation/tasks/software/firefox_installation/tasks/firefox_extension.yml[0m:11
+
+]8;id=409425;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/firefox_installation/tasks/firefox_extension.yml[0m:13
+
+]8;id=980713;https://ansible.readthedocs.io/projects/lint/rules/risky-file-permissions/\[1;91mrisky-file-permissions[0m]8;;\[2m:[0m [91mFile permissions unset or incorrect.[0m
+[34mworkstation/tasks/software/firefox_installation/tasks/firefox_settings.yml[0m:1 [2mTask/Handler: Ensure Firefox policies directory exists[0m
+
+]8;id=640906;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/firefox_installation/tasks/firefox_settings.yml[0m:5
+
+]8;id=900788;https://ansible.readthedocs.io/projects/lint/rules/risky-file-permissions/\[1;91mrisky-file-permissions[0m]8;;\[2m:[0m [91mFile permissions unset or incorrect.[0m
+[34mworkstation/tasks/software/firefox_installation/tasks/firefox_settings.yml[0m:7 [2mTask/Handler: Configure Firefox Policies for Settings[0m
+
+]8;id=316418;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/firefox_installation/tasks/firefox_settings.yml[0m:11
+
+]8;id=220068;https://ansible.readthedocs.io/projects/lint/rules/command-instead-of-shell/\[1;91mcommand-instead-of-shell[0m]8;;\[2m:[0m [91mUse shell only when shell functionality is required.[0m
+[34mworkstation/tasks/software/firefox_installation/tasks/main.yml[0m:2 [2mTask/Handler: Check if Firefox is already installed[0m
+
+]8;id=473190;https://ansible.readthedocs.io/projects/lint/rules/package-latest/\[1;91mpackage-latest[0m]8;;\[2m:[0m [91mPackage installs should not use latest.[0m
+[34mworkstation/tasks/software/firefox_installation/tasks/main.yml[0m:9 [2mTask/Handler: Install or Update Firefox to the latest version[0m
+
+]8;id=922327;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (import_tasks).[0m
+[34mworkstation/tasks/software/firefox_installation/tasks/main.yml[0m:15 [2mUse `ansible.builtin.import_tasks` or `ansible.legacy.import_tasks` instead.[0m
+
+]8;id=901176;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (import_tasks).[0m
+[34mworkstation/tasks/software/firefox_installation/tasks/main.yml[0m:18 [2mUse `ansible.builtin.import_tasks` or `ansible.legacy.import_tasks` instead.[0m
+
+]8;id=974344;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/firefox_installation/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=327503;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/flatpak_install/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=320512;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/flatpak_install/tasks/main.yml[0m:7 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=753320;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/flatpak_install/tasks/main.yml[0m:7 [2mTask/Handler: Add flathub repository[0m
+
+]8;id=682826;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/flatpak_install/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=603825;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/foliate_installer/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=33904;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/foliate_installer/tasks/main.yml[0m:3 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=355584;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/foliate_installer/tasks/main.yml[0m:3 [2mTask/Handler: Check if Flatpak is installed[0m
+
+]8;id=983610;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (package).[0m
+[34mworkstation/tasks/software/foliate_installer/tasks/main.yml[0m:9 [2mUse `ansible.builtin.package` or `ansible.legacy.package` instead.[0m
+
+]8;id=501072;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action][0m]8;;\[2m:[0m [91mUse FQCN for module actions, such `community.general.flatpak`.[0m
+[34mworkstation/tasks/software/foliate_installer/tasks/main.yml[0m:15 [2mAction `flatpak` is not FQCN.[0m
+
+]8;id=364063;https://ansible.readthedocs.io/projects/lint/rules/partial-become/\[1;91mpartial-become[task][0m]8;;\[2m:[0m [91m``become_user`` should have a corresponding ``become`` at the play or task level.[0m
+[34mworkstation/tasks/software/foliate_installer/tasks/main.yml[0m:15 [2mTask/Handler: Install Foliate via Flatpak[0m
+
+]8;id=864585;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/foliate_installer/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=997065;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (1 > 0)[0m
+[34mworkstation/tasks/software/gcloud_cli/defaults/main.yml[0m:29
+
+]8;id=344371;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/gcloud_cli/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=532457;https://ansible.readthedocs.io/projects/lint/rules/risky-file-permissions/\[1;91mrisky-file-permissions[0m]8;;\[2m:[0m [91mFile permissions unset or incorrect.[0m
+[34mworkstation/tasks/software/gcloud_cli/tasks/main.yml[0m:1 [2mTask/Handler: Add GCP CLI repository[0m
+
+]8;id=294630;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/gcloud_cli/tasks/main.yml[0m:2
+
+]8;id=475557;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/gcloud_cli/tasks/main.yml[0m:13
+
+]8;id=583579;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/gcloud_cli/tasks/main.yml[0m:17
+
+]8;id=525218;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/gcloud_cli/tasks/main.yml[0m:23
+
+]8;id=751869;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (1 > 0)[0m
+[34mworkstation/tasks/software/gcloud_cli/tasks/main.yml[0m:28
+
+]8;id=334092;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/gcloud_cli/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=448721;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/git_setup_and_configuration/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=794387;https://ansible.readthedocs.io/projects/lint/rules/package-latest/\[1;91mpackage-latest[0m]8;;\[2m:[0m [91mPackage installs should not use latest.[0m
+[34mworkstation/tasks/software/git_setup_and_configuration/tasks/main.yml[0m:2 [2mTask/Handler: Ensure Git is installed at the latest version[0m
+
+]8;id=306304;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[canonical][0m]8;;\[2m:[0m [91mYou should use canonical module name `community.general.git_config` instead of `ansible.builtin.git_config`.[0m
+[34mworkstation/tasks/software/git_setup_and_configuration/tasks/main.yml[0m:7 [2mTask/Handler: Set global Git configuration[0m
+
+]8;id=251514;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/git_setup_and_configuration/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=751909;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/google_chrome_setup/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=83414;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/google_chrome_setup/tasks/main.yml[0m:13
+
+]8;id=495644;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/google_chrome_setup/tasks/main.yml[0m:14
+
+]8;id=70075;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/google_chrome_setup/tasks/main.yml[0m:15
+
+]8;id=55374;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (import_role).[0m
+[34mworkstation/tasks/software/google_chrome_setup/tasks/main.yml[0m:24 [2mUse `ansible.builtin.import_role` or `ansible.legacy.import_role` instead.[0m
+
+]8;id=454039;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (import_role).[0m
+[34mworkstation/tasks/software/google_chrome_setup/tasks/main.yml[0m:29 [2mUse `ansible.builtin.import_role` or `ansible.legacy.import_role` instead.[0m
+
+]8;id=103061;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/google_chrome_setup/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=480639;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/gparted_role/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=36606;https://ansible.readthedocs.io/projects/lint/rules/command-instead-of-shell/\[1;91mcommand-instead-of-shell[0m]8;;\[2m:[0m [91mUse shell only when shell functionality is required.[0m
+[34mworkstation/tasks/software/gparted_role/tasks/main.yml[0m:2 [2mTask/Handler: Check if gparted is already installed[0m
+
+]8;id=809021;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (shell).[0m
+[34mworkstation/tasks/software/gparted_role/tasks/main.yml[0m:2 [2mUse `ansible.builtin.shell` or `ansible.legacy.shell` instead.[0m
+
+]8;id=762264;https://ansible.readthedocs.io/projects/lint/rules/key-order/\[1;91mkey-order[task][0m]8;;\[2m:[0m [91mYou can improve the task key order to: name, when, block[0m
+[34mworkstation/tasks/software/gparted_role/tasks/main.yml[0m:8 [2mTask/Handler: Install necessary repositories and gparted[0m
+
+]8;id=332890;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/gparted_role/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=770227;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[new-line-at-end-of-file][0m]8;;\[2m:[0m [91mNo new line character at the end of file[0m
+[34mworkstation/tasks/software/install_minikube/defaults/main.yml[0m:5
+
+]8;id=487936;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/install_minikube/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=230025;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (dnf).[0m
+[34mworkstation/tasks/software/install_minikube/tasks/main.yml[0m:2 [2mUse `ansible.builtin.dnf` or `ansible.legacy.dnf` instead.[0m
+
+]8;id=745272;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (systemd).[0m
+[34mworkstation/tasks/software/install_minikube/tasks/main.yml[0m:15 [2mUse `ansible.builtin.systemd` or `ansible.legacy.systemd` instead.[0m
+
+]8;id=363671;https://ansible.readthedocs.io/projects/lint/rules/no-handler/\[1;91mno-handler[0m]8;;\[2m:[0m [91mTasks that run when changed should likely be handlers.[0m
+[34mworkstation/tasks/software/install_minikube/tasks/main.yml[0m:15 [2mTask/Handler: Start and enable libvirtd service[0m
+
+]8;id=332836;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/install_minikube/tasks/main.yml[0m:19
+
+]8;id=322739;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (stat).[0m
+[34mworkstation/tasks/software/install_minikube/tasks/main.yml[0m:22 [2mUse `ansible.builtin.stat` or `ansible.legacy.stat` instead.[0m
+
+]8;id=665417;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (get_url).[0m
+[34mworkstation/tasks/software/install_minikube/tasks/main.yml[0m:27 [2mUse `ansible.builtin.get_url` or `ansible.legacy.get_url` instead.[0m
+
+]8;id=694766;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/install_minikube/tasks/main.yml[0m:34 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=401906;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/install_minikube/tasks/main.yml[0m:34 [2mTask/Handler: Install Minikube[0m
+
+]8;id=72846;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/install_minikube/tasks/main.yml[0m:36
+
+]8;id=785268;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/install_minikube/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=786069;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/install_signal_desktop/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=924565;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (include_tasks).[0m
+[34mworkstation/tasks/software/install_signal_desktop/tasks/main.yml[0m:2 [2mUse `ansible.builtin.include_tasks` or `ansible.legacy.include_tasks` instead.[0m
+
+]8;id=730265;https://ansible.readthedocs.io/projects/lint/rules/name/\[1;91mname[missing][0m]8;;\[2m:[0m [91mAll tasks should be named.[0m
+[34mworkstation/tasks/software/install_signal_desktop/tasks/main.yml[0m:2 [2mTask/Handler: include_tasks prerequisites.yml[0m
+
+]8;id=374664;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/install_signal_desktop/tasks/main.yml[0m:4 [2mTask/Handler: Add Flathub repository[0m
+
+]8;id=667050;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/install_signal_desktop/tasks/main.yml[0m:8
+
+]8;id=534938;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/install_signal_desktop/tasks/main.yml[0m:10 [2mTask/Handler: Install Signal Desktop[0m
+
+]8;id=444387;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/install_signal_desktop/tasks/main.yml[0m:14
+
+]8;id=783133;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/install_signal_desktop/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=943512;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'dependencies': [{'name': 'epel_wine_setup'}]} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/kindle_for_pc/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=976938;https://ansible.readthedocs.io/projects/lint/rules/risky-file-permissions/\[1;91mrisky-file-permissions[0m]8;;\[2m:[0m [91mFile permissions unset or incorrect.[0m
+[34mworkstation/tasks/software/kindle_for_pc/tasks/main.yml[0m:10 [2mTask/Handler: Download Kindle for PC installer[0m
+
+]8;id=450703;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/kindle_for_pc/tasks/main.yml[0m:15 [2mTask/Handler: Install Kindle for PC[0m
+
+]8;id=826217;https://ansible.readthedocs.io/projects/lint/rules/partial-become/\[1;91mpartial-become[task][0m]8;;\[2m:[0m [91m``become_user`` should have a corresponding ``become`` at the play or task level.[0m
+[34mworkstation/tasks/software/kindle_for_pc/tasks/main.yml[0m:15 [2mTask/Handler: Install Kindle for PC[0m
+
+]8;id=957832;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (2 > 0)[0m
+[34mworkstation/tasks/software/kindle_for_pc/tasks/main.yml[0m:24
+
+]8;id=827959;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/kindle_for_pc/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=287865;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (1 > 0)[0m
+[34mworkstation/tasks/software/linode_cli/defaults/main.yml[0m:4
+
+]8;id=161482;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/linode_cli/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=400135;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/linode_cli/tasks/main.yml[0m:1 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=871272;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/linode_cli/tasks/main.yml[0m:1 [2mTask/Handler: Check if linode-cli is already installed[0m
+
+]8;id=294337;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/linode_cli/tasks/main.yml[0m:4
+
+]8;id=127452;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (pip).[0m
+[34mworkstation/tasks/software/linode_cli/tasks/main.yml[0m:7 [2mUse `ansible.builtin.pip` or `ansible.legacy.pip` instead.[0m
+
+]8;id=272004;https://ansible.readthedocs.io/projects/lint/rules/package-latest/\[1;91mpackage-latest[0m]8;;\[2m:[0m [91mPackage installs should not use latest.[0m
+[34mworkstation/tasks/software/linode_cli/tasks/main.yml[0m:7 [2mTask/Handler: Install linode-cli using pip[0m
+
+]8;id=855665;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/linode_cli/tasks/main.yml[0m:12
+
+]8;id=684592;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/linode_cli/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=988474;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/mamba_installation/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=259125;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/mamba_installation/tasks/main.yml[0m:6
+
+]8;id=246788;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (get_url).[0m
+[34mworkstation/tasks/software/mamba_installation/tasks/main.yml[0m:8 [2mUse `ansible.builtin.get_url` or `ansible.legacy.get_url` instead.[0m
+
+]8;id=601658;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/mamba_installation/tasks/main.yml[0m:13
+
+]8;id=22650;https://ansible.readthedocs.io/projects/lint/rules/command-instead-of-shell/\[1;91mcommand-instead-of-shell[0m]8;;\[2m:[0m [91mUse shell only when shell functionality is required.[0m
+[34mworkstation/tasks/software/mamba_installation/tasks/main.yml[0m:16 [2mTask/Handler: Install Mambaforge[0m
+
+]8;id=922478;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/mamba_installation/tasks/main.yml[0m:21
+
+]8;id=115794;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/mamba_installation/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=959996;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/my_boto_role/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=642343;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/my_boto_role/tasks/main.yml[0m:4 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=609727;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/my_boto_role/tasks/main.yml[0m:4 [2mTask/Handler: Check if pip3 is installed[0m
+
+]8;id=176023;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum).[0m
+[34mworkstation/tasks/software/my_boto_role/tasks/main.yml[0m:11 [2mUse `ansible.builtin.yum` or `ansible.legacy.yum` instead.[0m
+
+]8;id=136060;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[trailing-spaces][0m]8;;\[2m:[0m [91mTrailing spaces[0m
+[34mworkstation/tasks/software/my_boto_role/tasks/main.yml[0m:17
+
+]8;id=785592;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/my_boto_role/tasks/main.yml[0m:21 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=137815;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/my_boto_role/tasks/main.yml[0m:21 [2mTask/Handler: Check if boto is already installed[0m
+
+]8;id=999153;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (pip).[0m
+[34mworkstation/tasks/software/my_boto_role/tasks/main.yml[0m:27 [2mUse `ansible.builtin.pip` or `ansible.legacy.pip` instead.[0m
+
+]8;id=803570;https://ansible.readthedocs.io/projects/lint/rules/package-latest/\[1;91mpackage-latest[0m]8;;\[2m:[0m [91mPackage installs should not use latest.[0m
+[34mworkstation/tasks/software/my_boto_role/tasks/main.yml[0m:27 [2mTask/Handler: Install or update boto using pip3[0m
+
+]8;id=904370;https://ansible.readthedocs.io/projects/lint/rules/partial-become/\[1;91mpartial-become[task][0m]8;;\[2m:[0m [91m``become_user`` should have a corresponding ``become`` at the play or task level.[0m
+[34mworkstation/tasks/software/my_boto_role/tasks/main.yml[0m:27 [2mTask/Handler: Install or update boto using pip3[0m
+
+]8;id=453609;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/my_boto_role/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=935769;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/my_nomad_role/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=100586;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum).[0m
+[34mworkstation/tasks/software/my_nomad_role/tasks/main.yml[0m:2 [2mUse `ansible.builtin.yum` or `ansible.legacy.yum` instead.[0m
+
+]8;id=715762;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (get_url).[0m
+[34mworkstation/tasks/software/my_nomad_role/tasks/main.yml[0m:7 [2mUse `ansible.builtin.get_url` or `ansible.legacy.get_url` instead.[0m
+
+]8;id=982641;https://ansible.readthedocs.io/projects/lint/rules/risky-file-permissions/\[1;91mrisky-file-permissions[0m]8;;\[2m:[0m [91mFile permissions unset or incorrect.[0m
+[34mworkstation/tasks/software/my_nomad_role/tasks/main.yml[0m:7 [2mTask/Handler: Add HashiCorp YUM repository[0m
+
+]8;id=466660;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum).[0m
+[34mworkstation/tasks/software/my_nomad_role/tasks/main.yml[0m:13 [2mUse `ansible.builtin.yum` or `ansible.legacy.yum` instead.[0m
+
+]8;id=212163;https://ansible.readthedocs.io/projects/lint/rules/package-latest/\[1;91mpackage-latest[0m]8;;\[2m:[0m [91mPackage installs should not use latest.[0m
+[34mworkstation/tasks/software/my_nomad_role/tasks/main.yml[0m:13 [2mTask/Handler: Install Nomad[0m
+
+]8;id=868253;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/my_nomad_role/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=502735;https://ansible.readthedocs.io/projects/lint/rules/name/\[1;91mname[casing][0m]8;;\[2m:[0m [91mAll names should start with an uppercase letter.[0m
+[34mworkstation/tasks/software/notion_setup/handlers/main.yml[0m:2 [2mTask/Handler: restart snapd.socket[0m
+
+]8;id=693721;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/notion_setup/handlers/main.yml[0m:6
+
+]8;id=927995;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/notion_setup/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=945208;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/notion_setup/tasks/main.yml[0m:16
+
+]8;id=950363;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/notion_setup/tasks/main.yml[0m:26 [2mTask/Handler: Install Notion if not already installed[0m
+
+]8;id=781156;https://ansible.readthedocs.io/projects/lint/rules/risky-shell-pipe/\[1;91mrisky-shell-pipe[0m]8;;\[2m:[0m [91mShells that use pipes should set the pipefail option.[0m
+[34mworkstation/tasks/software/notion_setup/tasks/main.yml[0m:26 [2mTask/Handler: Install Notion if not already installed[0m
+
+]8;id=248938;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/notion_setup/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=265796;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/nvidia_driver_setup/handlers/main.yml[0m:2 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=142769;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/nvidia_driver_setup/handlers/main.yml[0m:2 [2mTask/Handler: Rebuild initramfs[0m
+
+]8;id=22128;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (reboot).[0m
+[34mworkstation/tasks/software/nvidia_driver_setup/handlers/main.yml[0m:5 [2mUse `ansible.builtin.reboot` or `ansible.legacy.reboot` instead.[0m
+
+]8;id=313709;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/nvidia_driver_setup/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=901053;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/nvidia_driver_setup/tasks/main.yml[0m:2 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=21660;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/nvidia_driver_setup/tasks/main.yml[0m:7
+
+]8;id=463355;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (get_url).[0m
+[34mworkstation/tasks/software/nvidia_driver_setup/tasks/main.yml[0m:9 [2mUse `ansible.builtin.get_url` or `ansible.legacy.get_url` instead.[0m
+
+]8;id=139217;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (shell).[0m
+[34mworkstation/tasks/software/nvidia_driver_setup/tasks/main.yml[0m:16 [2mUse `ansible.builtin.shell` or `ansible.legacy.shell` instead.[0m
+
+]8;id=7106;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (lineinfile).[0m
+[34mworkstation/tasks/software/nvidia_driver_setup/tasks/main.yml[0m:22 [2mUse `ansible.builtin.lineinfile` or `ansible.legacy.lineinfile` instead.[0m
+
+]8;id=761178;https://ansible.readthedocs.io/projects/lint/rules/risky-file-permissions/\[1;91mrisky-file-permissions[0m]8;;\[2m:[0m [91mFile permissions unset or incorrect.[0m
+[34mworkstation/tasks/software/nvidia_driver_setup/tasks/main.yml[0m:22 [2mTask/Handler: Ensure the Nouveau driver is disabled[0m
+
+]8;id=42288;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/nvidia_driver_setup/tasks/main.yml[0m:26
+
+]8;id=22245;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/nvidia_driver_setup/tasks/main.yml[0m:30 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=431047;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/nvidia_driver_setup/tasks/main.yml[0m:30 [2mTask/Handler: Install NVIDIA Linux driver[0m
+
+]8;id=319749;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/nvidia_driver_setup/tasks/main.yml[0m:33
+
+]8;id=695575;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/nvidia_driver_setup/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=438984;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/openlens_installation/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=138836;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/openlens_installation/tasks/main.yml[0m:2 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=693241;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/openlens_installation/tasks/main.yml[0m:2 [2mTask/Handler: Check if Flatpak is installed[0m
+
+]8;id=806967;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum).[0m
+[34mworkstation/tasks/software/openlens_installation/tasks/main.yml[0m:7 [2mUse `ansible.builtin.yum` or `ansible.legacy.yum` instead.[0m
+
+]8;id=217124;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/openlens_installation/tasks/main.yml[0m:13 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=104115;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/openlens_installation/tasks/main.yml[0m:13 [2mTask/Handler: Add Flathub repository[0m
+
+]8;id=922205;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/openlens_installation/tasks/main.yml[0m:17 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=846250;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/openlens_installation/tasks/main.yml[0m:23 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=949955;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/openlens_installation/tasks/main.yml[0m:23 [2mTask/Handler: Run OpenLens (Example)[0m
+
+]8;id=834939;https://ansible.readthedocs.io/projects/lint/rules/no-handler/\[1;91mno-handler[0m]8;;\[2m:[0m [91mTasks that run when changed should likely be handlers.[0m
+[34mworkstation/tasks/software/openlens_installation/tasks/main.yml[0m:23 [2mTask/Handler: Run OpenLens (Example)[0m
+
+]8;id=931092;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/openlens_installation/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=553189;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/packer_install/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=236659;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/packer_install/tasks/main.yml[0m:2 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=737921;https://ansible.readthedocs.io/projects/lint/rules/key-order/\[1;91mkey-order[task][0m]8;;\[2m:[0m [91mYou can improve the task key order to: name, when, block[0m
+[34mworkstation/tasks/software/packer_install/tasks/main.yml[0m:9 [2mTask/Handler: Download and install Packer[0m
+
+]8;id=463524;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (uri).[0m
+[34mworkstation/tasks/software/packer_install/tasks/main.yml[0m:11 [2mUse `ansible.builtin.uri` or `ansible.legacy.uri` instead.[0m
+
+]8;id=200869;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/packer_install/tasks/main.yml[0m:15
+
+]8;id=860980;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (set_fact).[0m
+[34mworkstation/tasks/software/packer_install/tasks/main.yml[0m:19 [2mUse `ansible.builtin.set_fact` or `ansible.legacy.set_fact` instead.[0m
+
+]8;id=356414;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (unarchive).[0m
+[34mworkstation/tasks/software/packer_install/tasks/main.yml[0m:24 [2mUse `ansible.builtin.unarchive` or `ansible.legacy.unarchive` instead.[0m
+
+]8;id=915105;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/packer_install/tasks/main.yml[0m:28
+
+]8;id=957234;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/packer_install/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=543881;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/realscan_g10_install/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=231462;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/realscan_g10_install/tasks/main.yml[0m:7 [2mTask/Handler: Install RealScan G10 driver using Wine[0m
+
+]8;id=489007;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/realscan_g10_install/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=659660;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/rocky_consul_install/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=190634;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum).[0m
+[34mworkstation/tasks/software/rocky_consul_install/tasks/main.yml[0m:2 [2mUse `ansible.builtin.yum` or `ansible.legacy.yum` instead.[0m
+
+]8;id=258942;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum_repository).[0m
+[34mworkstation/tasks/software/rocky_consul_install/tasks/main.yml[0m:7 [2mUse `ansible.builtin.yum_repository` or `ansible.legacy.yum_repository` instead.[0m
+
+]8;id=713184;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/rocky_consul_install/tasks/main.yml[0m:12
+
+]8;id=944565;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/rocky_consul_install/tasks/main.yml[0m:13
+
+]8;id=996549;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/rocky_consul_install/tasks/main.yml[0m:14
+
+]8;id=522136;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum).[0m
+[34mworkstation/tasks/software/rocky_consul_install/tasks/main.yml[0m:17 [2mUse `ansible.builtin.yum` or `ansible.legacy.yum` instead.[0m
+
+]8;id=796625;https://ansible.readthedocs.io/projects/lint/rules/package-latest/\[1;91mpackage-latest[0m]8;;\[2m:[0m [91mPackage installs should not use latest.[0m
+[34mworkstation/tasks/software/rocky_consul_install/tasks/main.yml[0m:17 [2mTask/Handler: Install Consul[0m
+
+]8;id=78353;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/rocky_consul_install/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=989177;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/rocky_linux_tmux_installer/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=555169;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (1 > 0)[0m
+[34mworkstation/tasks/software/rocky_linux_tmux_installer/tasks/main.yml[0m:15
+
+]8;id=424278;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/rocky_linux_tmux_installer/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=356171;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/software_vlc/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=133395;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/software_vlc/tasks/main.yml[0m:2 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=818309;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action][0m]8;;\[2m:[0m [91mUse FQCN for module actions, such `community.general.flatpak`.[0m
+[34mworkstation/tasks/software/software_vlc/tasks/main.yml[0m:11 [2mAction `flatpak` is not FQCN.[0m
+
+]8;id=384838;https://ansible.readthedocs.io/projects/lint/rules/literal-compare/\[1;91mliteral-compare[0m]8;;\[2m:[0m [91mDon't compare to literal True/False.[0m
+[34mworkstation/tasks/software/software_vlc/tasks/main.yml[0m:11 [2mTask/Handler: Install VLC using Flatpak[0m
+
+]8;id=609114;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/software_vlc/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=127583;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/spotify_setup/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=434962;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/spotify_setup/tasks/main.yml[0m:4 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=956415;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/spotify_setup/tasks/main.yml[0m:4 [2mTask/Handler: Check if Flatpak is installed[0m
+
+]8;id=862690;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum).[0m
+[34mworkstation/tasks/software/spotify_setup/tasks/main.yml[0m:9 [2mUse `ansible.builtin.yum` or `ansible.legacy.yum` instead.[0m
+
+]8;id=981160;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/spotify_setup/tasks/main.yml[0m:16 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=870436;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/spotify_setup/tasks/main.yml[0m:16 [2mTask/Handler: Add Flathub repository[0m
+
+]8;id=359728;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/spotify_setup/tasks/main.yml[0m:20 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=127862;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/spotify_setup/tasks/main.yml[0m:25 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=816675;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/spotify_setup/tasks/main.yml[0m:25 [2mTask/Handler: Install Spotify[0m
+
+]8;id=802293;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/spotify_setup/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=813933;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/steam_install/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=725221;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (get_url).[0m
+[34mworkstation/tasks/software/steam_install/tasks/main.yml[0m:23 [2mUse `ansible.builtin.get_url` or `ansible.legacy.get_url` instead.[0m
+
+]8;id=374451;https://ansible.readthedocs.io/projects/lint/rules/risky-file-permissions/\[1;91mrisky-file-permissions[0m]8;;\[2m:[0m [91mFile permissions unset or incorrect.[0m
+[34mworkstation/tasks/software/steam_install/tasks/main.yml[0m:23 [2mTask/Handler: Download Steam RPM package[0m
+
+]8;id=966073;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/steam_install/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=385817;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/telegram_install/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=477657;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/telegram_install/tasks/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=910454;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/telegram_install/tasks/main.yml[0m:4
+
+]8;id=216615;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/telegram_install/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=50948;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (1 > 0)[0m
+[34mworkstation/tasks/software/terraform_installer/defaults/main.yml[0m:5
+
+]8;id=370031;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your_name', 'description': 'Role to install Terraform on Rocky Linux', 'platforms': [{'name': 'EL', 'versions': [9]}], 'galaxy_tags': ['cloud', 'terraform']}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/terraform_installer/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=514480;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/terraform_installer/tasks/main.yml[0m:2 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=155136;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/terraform_installer/tasks/main.yml[0m:7
+
+]8;id=7651;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum_repository).[0m
+[34mworkstation/tasks/software/terraform_installer/tasks/main.yml[0m:9 [2mUse `ansible.builtin.yum_repository` or `ansible.legacy.yum_repository` instead.[0m
+
+]8;id=584454;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/terraform_installer/tasks/main.yml[0m:14
+
+]8;id=660796;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/terraform_installer/tasks/main.yml[0m:15
+
+]8;id=560653;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum).[0m
+[34mworkstation/tasks/software/terraform_installer/tasks/main.yml[0m:19 [2mUse `ansible.builtin.yum` or `ansible.legacy.yum` instead.[0m
+
+]8;id=804595;https://ansible.readthedocs.io/projects/lint/rules/package-latest/\[1;91mpackage-latest[0m]8;;\[2m:[0m [91mPackage installs should not use latest.[0m
+[34mworkstation/tasks/software/terraform_installer/tasks/main.yml[0m:19 [2mTask/Handler: Install Terraform[0m
+
+]8;id=991313;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/terraform_installer/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=668103;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (1 > 0)[0m
+[34mworkstation/tasks/software/terraform_installer/vars/main.yml[0m:3
+
+]8;id=848728;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/thunderbird_installation/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=920343;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/thunderbird_installation/tasks/main.yml[0m:2 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=393067;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/thunderbird_installation/tasks/main.yml[0m:5
+
+]8;id=461212;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (package).[0m
+[34mworkstation/tasks/software/thunderbird_installation/tasks/main.yml[0m:8 [2mUse `ansible.builtin.package` or `ansible.legacy.package` instead.[0m
+
+]8;id=56045;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/thunderbird_installation/tasks/main.yml[0m:14 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=461048;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/thunderbird_installation/tasks/main.yml[0m:17
+
+]8;id=374843;https://ansible.readthedocs.io/projects/lint/rules/literal-compare/\[1;91mliteral-compare[0m]8;;\[2m:[0m [91mDon't compare to literal True/False.[0m
+[34mworkstation/tasks/software/thunderbird_installation/tasks/main.yml[0m:20 [2mTask/Handler: Install Thunderbird Flatpak[0m
+
+]8;id=205726;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action][0m]8;;\[2m:[0m [91mUse FQCN for module actions, such `community.general.flatpak`.[0m
+[34mworkstation/tasks/software/thunderbird_installation/tasks/main.yml[0m:23 [2mAction `flatpak` is not FQCN.[0m
+
+]8;id=965745;https://ansible.readthedocs.io/projects/lint/rules/name/\[1;91mname[casing][0m]8;;\[2m:[0m [91mAll names should start with an uppercase letter.[0m
+[34mworkstation/tasks/software/thunderbird_installation/tasks/main.yml[0m:23 [2mTask/Handler: software | thunderbird | install package[0m
+
+]8;id=365059;https://ansible.readthedocs.io/projects/lint/rules/partial-become/\[1;91mpartial-become[task][0m]8;;\[2m:[0m [91m``become_user`` should have a corresponding ``become`` at the play or task level.[0m
+[34mworkstation/tasks/software/thunderbird_installation/tasks/main.yml[0m:23 [2mTask/Handler: software | thunderbird | install package[0m
+
+]8;id=84252;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (file).[0m
+[34mworkstation/tasks/software/thunderbird_installation/tasks/main.yml[0m:30 [2mUse `ansible.builtin.file` or `ansible.legacy.file` instead.[0m
+
+]8;id=260731;https://ansible.readthedocs.io/projects/lint/rules/name/\[1;91mname[casing][0m]8;;\[2m:[0m [91mAll names should start with an uppercase letter.[0m
+[34mworkstation/tasks/software/thunderbird_installation/tasks/main.yml[0m:30 [2mTask/Handler: software | thunderbird | enable autostart[0m
+
+]8;id=891385;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/thunderbird_installation/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=593748;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'Your Name', 'description': 'Role to install and configure Todoist on Rocky Linux', 'company': 'Your Company', 'license': '', 'min_ansible_version': '', 'platforms': [{'name': 'EL', 'versions': ['9']}]}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/todoist_installation/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=162986;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/todoist_installation/tasks/main.yml[0m:17
+
+]8;id=20942;https://ansible.readthedocs.io/projects/lint/rules/command-instead-of-shell/\[1;91mcommand-instead-of-shell[0m]8;;\[2m:[0m [91mUse shell only when shell functionality is required.[0m
+[34mworkstation/tasks/software/todoist_installation/tasks/main.yml[0m:20 [2mTask/Handler: Ensure snap core is installed[0m
+
+]8;id=865414;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/todoist_installation/tasks/main.yml[0m:20 [2mTask/Handler: Ensure snap core is installed[0m
+
+]8;id=287555;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action][0m]8;;\[2m:[0m [91mUse FQCN for module actions, such `community.general.snap`.[0m
+[34mworkstation/tasks/software/todoist_installation/tasks/main.yml[0m:24 [2mAction `snap` is not FQCN.[0m
+
+]8;id=926438;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (file).[0m
+[34mworkstation/tasks/software/todoist_installation/tasks/main.yml[0m:32 [2mUse `ansible.builtin.file` or `ansible.legacy.file` instead.[0m
+
+]8;id=36747;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/todoist_installation/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=324237;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (1 > 0)[0m
+[34mworkstation/tasks/software/vagrant_installer/defaults/main.yml[0m:3
+
+]8;id=473923;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/vagrant_installer/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=387579;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum).[0m
+[34mworkstation/tasks/software/vagrant_installer/tasks/main.yml[0m:2 [2mUse `ansible.builtin.yum` or `ansible.legacy.yum` instead.[0m
+
+]8;id=760700;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum).[0m
+[34mworkstation/tasks/software/vagrant_installer/tasks/main.yml[0m:7 [2mUse `ansible.builtin.yum` or `ansible.legacy.yum` instead.[0m
+
+]8;id=436188;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum_repository).[0m
+[34mworkstation/tasks/software/vagrant_installer/tasks/main.yml[0m:13 [2mUse `ansible.builtin.yum_repository` or `ansible.legacy.yum_repository` instead.[0m
+
+]8;id=622214;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/vagrant_installer/tasks/main.yml[0m:18
+
+]8;id=771509;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/vagrant_installer/tasks/main.yml[0m:19
+
+]8;id=740953;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum).[0m
+[34mworkstation/tasks/software/vagrant_installer/tasks/main.yml[0m:21 [2mUse `ansible.builtin.yum` or `ansible.legacy.yum` instead.[0m
+
+]8;id=309316;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (unarchive).[0m
+[34mworkstation/tasks/software/vagrant_installer/tasks/main.yml[0m:27 [2mUse `ansible.builtin.unarchive` or `ansible.legacy.unarchive` instead.[0m
+
+]8;id=738004;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/vagrant_installer/tasks/main.yml[0m:31
+
+]8;id=467654;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[trailing-spaces][0m]8;;\[2m:[0m [91mTrailing spaces[0m
+[34mworkstation/tasks/software/vagrant_installer/tasks/main.yml[0m:32
+
+]8;id=783792;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/vagrant_installer/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=736029;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/vault_installation/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=447861;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum).[0m
+[34mworkstation/tasks/software/vault_installation/tasks/main.yml[0m:2 [2mUse `ansible.builtin.yum` or `ansible.legacy.yum` instead.[0m
+
+]8;id=568810;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (get_url).[0m
+[34mworkstation/tasks/software/vault_installation/tasks/main.yml[0m:7 [2mUse `ansible.builtin.get_url` or `ansible.legacy.get_url` instead.[0m
+
+]8;id=823784;https://ansible.readthedocs.io/projects/lint/rules/risky-file-permissions/\[1;91mrisky-file-permissions[0m]8;;\[2m:[0m [91mFile permissions unset or incorrect.[0m
+[34mworkstation/tasks/software/vault_installation/tasks/main.yml[0m:7 [2mTask/Handler: Add HashiCorp repository[0m
+
+]8;id=891793;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum).[0m
+[34mworkstation/tasks/software/vault_installation/tasks/main.yml[0m:13 [2mUse `ansible.builtin.yum` or `ansible.legacy.yum` instead.[0m
+
+]8;id=857115;https://ansible.readthedocs.io/projects/lint/rules/package-latest/\[1;91mpackage-latest[0m]8;;\[2m:[0m [91mPackage installs should not use latest.[0m
+[34mworkstation/tasks/software/vault_installation/tasks/main.yml[0m:13 [2mTask/Handler: Install Vault[0m
+
+]8;id=609539;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/vault_installation/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=896089;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/virtualbox_setup_configuration/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=983173;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/virtualbox_setup_configuration/tasks/main.yml[0m:2 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=533766;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/software/virtualbox_setup_configuration/tasks/main.yml[0m:2 [2mTask/Handler: Check internet connectivity[0m
+
+]8;id=424905;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/virtualbox_setup_configuration/tasks/main.yml[0m:6
+
+]8;id=497315;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[trailing-spaces][0m]8;;\[2m:[0m [91mTrailing spaces[0m
+[34mworkstation/tasks/software/virtualbox_setup_configuration/tasks/main.yml[0m:7
+
+]8;id=656966;https://ansible.readthedocs.io/projects/lint/rules/name/\[1;91mname[missing][0m]8;;\[2m:[0m [91mAll tasks should be named.[0m
+[34mworkstation/tasks/software/virtualbox_setup_configuration/tasks/main.yml[0m:10 [2mTask/Handler: block/always/rescue [0m
+
+]8;id=270948;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (dnf).[0m
+[34mworkstation/tasks/software/virtualbox_setup_configuration/tasks/main.yml[0m:11 [2mUse `ansible.builtin.dnf` or `ansible.legacy.dnf` instead.[0m
+
+]8;id=600770;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (get_url).[0m
+[34mworkstation/tasks/software/virtualbox_setup_configuration/tasks/main.yml[0m:16 [2mUse `ansible.builtin.get_url` or `ansible.legacy.get_url` instead.[0m
+
+]8;id=223138;https://ansible.readthedocs.io/projects/lint/rules/risky-file-permissions/\[1;91mrisky-file-permissions[0m]8;;\[2m:[0m [91mFile permissions unset or incorrect.[0m
+[34mworkstation/tasks/software/virtualbox_setup_configuration/tasks/main.yml[0m:16 [2mTask/Handler: Download VirtualBox repository file[0m
+
+]8;id=685082;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (dnf).[0m
+[34mworkstation/tasks/software/virtualbox_setup_configuration/tasks/main.yml[0m:22 [2mUse `ansible.builtin.dnf` or `ansible.legacy.dnf` instead.[0m
+
+]8;id=227095;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (debug).[0m
+[34mworkstation/tasks/software/virtualbox_setup_configuration/tasks/main.yml[0m:29 [2mUse `ansible.builtin.debug` or `ansible.legacy.debug` instead.[0m
+
+]8;id=411028;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/virtualbox_setup_configuration/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=695046;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[new-line-at-end-of-file][0m]8;;\[2m:[0m [91mNo new line character at the end of file[0m
+[34mworkstation/tasks/software/vscode_setup_configuration/defaults/main.yml[0m:5
+
+]8;id=803055;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/vscode_setup_configuration/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=891815;https://ansible.readthedocs.io/projects/lint/rules/command-instead-of-module/\[1;91mcommand-instead-of-module[0m]8;;\[2m:[0m [91mrpm used in place of yum or rpm_key module[0m
+[34mworkstation/tasks/software/vscode_setup_configuration/tasks/main.yml[0m:2 [2mTask/Handler: Check if VSCode is already installed[0m
+
+]8;id=367825;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/software/vscode_setup_configuration/tasks/main.yml[0m:2 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=783485;https://ansible.readthedocs.io/projects/lint/rules/args/\[1;33margs[module][0m]8;;\[2m:[0m [33mmissing required arguments: key[0m [2;33m(warning)[0m
+[34mworkstation/tasks/software/vscode_setup_configuration/tasks/main.yml[0m:9 [2mTask/Handler: Import Microsoft GPG key[0m
+
+]8;id=206387;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (rpm_key).[0m
+[34mworkstation/tasks/software/vscode_setup_configuration/tasks/main.yml[0m:9 [2mUse `ansible.builtin.rpm_key` or `ansible.legacy.rpm_key` instead.[0m
+
+]8;id=918066;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum_repository).[0m
+[34mworkstation/tasks/software/vscode_setup_configuration/tasks/main.yml[0m:15 [2mUse `ansible.builtin.yum_repository` or `ansible.legacy.yum_repository` instead.[0m
+
+]8;id=206968;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/vscode_setup_configuration/tasks/main.yml[0m:20
+
+]8;id=426184;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (package).[0m
+[34mworkstation/tasks/software/vscode_setup_configuration/tasks/main.yml[0m:24 [2mUse `ansible.builtin.package` or `ansible.legacy.package` instead.[0m
+
+]8;id=25422;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/vscode_setup_configuration/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=75260;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[empty-lines][0m]8;;\[2m:[0m [91mToo many blank lines (1 > 0)[0m
+[34mworkstation/tasks/software/waypoint/defaults/main.yml[0m:6
+
+]8;id=913178;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/waypoint/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=671081;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum).[0m
+[34mworkstation/tasks/software/waypoint/tasks/main.yml[0m:2 [2mUse `ansible.builtin.yum` or `ansible.legacy.yum` instead.[0m
+
+]8;id=620895;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (get_url).[0m
+[34mworkstation/tasks/software/waypoint/tasks/main.yml[0m:7 [2mUse `ansible.builtin.get_url` or `ansible.legacy.get_url` instead.[0m
+
+]8;id=560506;https://ansible.readthedocs.io/projects/lint/rules/risky-file-permissions/\[1;91mrisky-file-permissions[0m]8;;\[2m:[0m [91mFile permissions unset or incorrect.[0m
+[34mworkstation/tasks/software/waypoint/tasks/main.yml[0m:7 [2mTask/Handler: Add HashiCorp YUM repository[0m
+
+]8;id=436657;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (yum).[0m
+[34mworkstation/tasks/software/waypoint/tasks/main.yml[0m:13 [2mUse `ansible.builtin.yum` or `ansible.legacy.yum` instead.[0m
+
+]8;id=140491;https://ansible.readthedocs.io/projects/lint/rules/package-latest/\[1;91mpackage-latest[0m]8;;\[2m:[0m [91mPackage installs should not use latest.[0m
+[34mworkstation/tasks/software/waypoint/tasks/main.yml[0m:13 [2mTask/Handler: Install Waypoint[0m
+
+]8;id=800339;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/waypoint/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=965147;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/software/whatsapp_install_setup_configuration/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=362244;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/whatsapp_install_setup_configuration/tasks/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=443939;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/whatsapp_install_setup_configuration/tasks/main.yml[0m:4
+
+]8;id=842266;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/whatsapp_install_setup_configuration/tasks/main.yml[0m:20
+
+]8;id=115360;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/software/whatsapp_install_setup_configuration/tasks/main.yml[0m:36
+
+]8;id=476235;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/software/whatsapp_install_setup_configuration/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=689584;https://ansible.readthedocs.io/projects/lint/rules/name/\[1;91mname[casing][0m]8;;\[2m:[0m [91mAll names should start with an uppercase letter.[0m
+[34mworkstation/tasks/system_setup/autofs-config/handlers/main.yml[0m:2 [2mTask/Handler: restart autofs[0m
+
+]8;id=314814;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/system_setup/autofs-config/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=192156;https://ansible.readthedocs.io/projects/lint/rules/args/\[1;33margs[module][0m]8;;\[2m:[0m [33mmissing required arguments: key[0m [2;33m(warning)[0m
+[34mworkstation/tasks/system_setup/autofs-config/tasks/main.yml[0m:2 [2mTask/Handler: Check if autofs is already installed[0m
+
+]8;id=509109;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/system_setup/autofs-config/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=692138;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/system_setup/chrome_extensions/tasks/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=659619;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/system_setup/chrome_extensions/tasks/main.yml[0m:3
+
+]8;id=861170;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (copy).[0m
+[34mworkstation/tasks/system_setup/chrome_settings/tasks/main.yml[0m:1 [2mUse `ansible.builtin.copy` or `ansible.legacy.copy` instead.[0m
+
+]8;id=238646;https://ansible.readthedocs.io/projects/lint/rules/yaml/\[1;91myaml[truthy][0m]8;;\[2m:[0m [91mTruthy value should be one of [false, true][0m
+[34mworkstation/tasks/system_setup/chrome_settings/tasks/main.yml[0m:2
+
+]8;id=237956;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (command).[0m
+[34mworkstation/tasks/users/rocky_linux_user_setup/handlers/main.yml[0m:2 [2mUse `ansible.builtin.command` or `ansible.legacy.command` instead.[0m
+
+]8;id=7979;https://ansible.readthedocs.io/projects/lint/rules/name/\[1;91mname[casing][0m]8;;\[2m:[0m [91mAll names should start with an uppercase letter.[0m
+[34mworkstation/tasks/users/rocky_linux_user_setup/handlers/main.yml[0m:2 [2mTask/Handler: update_xdg[0m
+
+]8;id=611457;https://ansible.readthedocs.io/projects/lint/rules/no-changed-when/\[1;91mno-changed-when[0m]8;;\[2m:[0m [91mCommands should not change things if nothing needs doing.[0m
+[34mworkstation/tasks/users/rocky_linux_user_setup/handlers/main.yml[0m:2 [2mTask/Handler: update_xdg[0m
+
+]8;id=208005;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$ {'galaxy_info': {'author': 'your name', 'description': 'your role description', 'company': 'your company (optional)', 'license': 'license (GPL-2.0-or-later, MIT, etc)', 'min_ansible_version': 2.1, 'galaxy_tags': []}, 'dependencies': []} is not of type 'array', 'null'[0m
+[34mworkstation/tasks/users/rocky_linux_user_setup/meta/main.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+
+]8;id=556360;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (file).[0m
+[34mworkstation/tasks/users/rocky_linux_user_setup/tasks/main.yml[0m:2 [2mUse `ansible.builtin.file` or `ansible.legacy.file` instead.[0m
+
+]8;id=166314;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (file).[0m
+[34mworkstation/tasks/users/rocky_linux_user_setup/tasks/main.yml[0m:18 [2mUse `ansible.builtin.file` or `ansible.legacy.file` instead.[0m
+
+]8;id=17291;https://ansible.readthedocs.io/projects/lint/rules/fqcn/\[1;91mfqcn[action-core][0m]8;;\[2m:[0m [91mUse FQCN for builtin module actions (copy).[0m
+[34mworkstation/tasks/users/rocky_linux_user_setup/tasks/main.yml[0m:47 [2mUse `ansible.builtin.copy` or `ansible.legacy.copy` instead.[0m
+
+]8;id=607441;https://ansible.readthedocs.io/projects/lint/rules/schema/\[1;91mschema[tasks][0m]8;;\[2m:[0m [91m$[0] 'block' is a required property[0m
+[34mworkstation/tasks/users/rocky_linux_user_setup/tests/test.yml[0m:1 [2m Returned errors will not include exact line numbers, but they will mention[0m
+[2mthe schema name being used as a tag, like ``schema[playbook]``,[0m
+[2m``schema[tasks]``.[0m
+
+[2mThis rule is not skippable and stops further processing of the file.[0m
+
+[2mIf incorrect schema was picked, you might want to either:[0m
+
+[2m* move the file to standard location, so its file is detected correctly.[0m
+[2m* use ``kinds:`` option in linter config to help it pick correct file type.[0m
+
+

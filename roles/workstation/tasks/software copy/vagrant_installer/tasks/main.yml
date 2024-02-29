@@ -1,0 +1,32 @@
+---
+- name: Check if yum-utils is installed
+  yum:
+    list: yum-utils
+  register: yum_utils
+
+- name: Install yum-utils
+  yum:
+    name: yum-utils
+    state: present
+  when: yum_utils.results | length == 0
+
+- name: Add HashiCorp repo
+  yum_repository:
+    name: hashicorp
+    description: HashiCorp stable repository
+    baseurl: https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+    enabled: yes
+    gpgcheck: yes
+
+- name: Install Vagrant
+  yum:
+    name: vagrant
+    state: present
+  when: vagrant_version == "latest" or vagrant_version is defined
+
+- name: Download and Install Vagrant binary
+  unarchive:
+    src: "https://releases.hashicorp.com/vagrant/{{ vagrant_version }}/vagrant_{{ vagrant_version }}_linux_amd64.zip"
+    dest: /usr/local/bin
+    remote_src: yes
+   

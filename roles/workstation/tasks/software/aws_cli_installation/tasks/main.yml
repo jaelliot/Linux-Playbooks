@@ -2,26 +2,29 @@
 # tasks file for aws_cli_installation
 
 - name: Check if AWS CLI is already installed
-  command: aws --version
+  ansible.builtin.command:
+    cmd: aws --version
   register: aws_cli_installed
   ignore_errors: true
+  changed_when: false
 
 - name: Download AWS CLI v2 installer
-  get_url:
+  ansible.builtin.get_url:
     url: https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
     dest: /tmp/awscliv2.zip
+    mode: '0755'
   when: aws_cli_installed is failed
 
 - name: Unzip AWS CLI installer
   ansible.builtin.unarchive:
     src: /tmp/awscliv2.zip
     dest: /tmp
-    remote_src: yes
+    remote_src: true
   when: aws_cli_installed is failed
 
 - name: Install AWS CLI v2
   ansible.builtin.command:
     cmd: /tmp/aws/install
     creates: /usr/local/bin/aws
-  become: yes
+  become: true
   when: aws_cli_installed is failed

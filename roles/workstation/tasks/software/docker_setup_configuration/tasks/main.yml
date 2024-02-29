@@ -1,6 +1,6 @@
 ---
 - name: Install required packages for Docker
-  dnf:
+  ansible.builtin.dnf:
     name: "{{ packages[:3] }}"
     state: present
 
@@ -8,16 +8,17 @@
   ansible.builtin.get_url:
     url: https://download.docker.com/linux/centos/docker-ce.repo
     dest: /etc/yum.repos.d/docker-ce.repo
+    mode: '0644'
 
 - name: Install Docker Engine
-  dnf:
+  ansible.builtin.dnf:
     name: "{{ packages[3:] }}"
     state: present
     enablerepo: 'docker-ce-stable'
   when: docker_version == "latest"
 
 - name: Start and enable Docker service
-  systemd:
+  ansible.builtin.systemd:
     name: docker
     state: started
-    enabled: yes
+    enabled: true

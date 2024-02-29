@@ -1,20 +1,20 @@
 ---
 - name: Install yum-utils if not present
-  yum:
+  ansible.builtin.yum:
     name: yum-utils
     state: present
 
 - name: Configure HashiCorp YUM repository
-  yum_repository:
+  ansible.builtin.yum_repository:
     name: hashicorp
-    description: HashiCorp stable - $basearch
-    baseurl: https://rpm.releases.hashicorp.com/RHEL/$releasever/$basearch/stable
-    enabled: yes
-    gpgcheck: yes
-    repo_gpgcheck: yes
-    gpgkey: https://rpm.releases.hashicorp.com/gpg
+    description: "HashiCorp stable - $basearch"
+    baseurl: "https://rpm.releases.hashicorp.com/RHEL/$releasever/$basearch/stable"
+    enabled: true
+    gpgcheck: true
+    repo_gpgcheck: true
+    gpgkey: "https://rpm.releases.hashicorp.com/gpg"
 
 - name: Install Consul
-  yum:
+  ansible.builtin.yum:
     name: consul
-    state: latest
+    state: present

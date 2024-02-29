@@ -3,19 +3,19 @@
   ansible.builtin.package:
     name: wget
     state: present
-  become: yes
+  become: true
 
 - name: Download Mambaforge installer
-  get_url:
+  ansible.builtin.get_url:
     url: https://github.com/conda-forge/miniforge/releases/download/23.3.1-1/Mambaforge-23.3.1-1-Linux-x86_64.sh
     dest: "/tmp/Mambaforge-23.3.1-1-Linux-x86_64.sh"
     mode: '0755'
-  become: yes
+  become: true
   when: ansible_os_family == "RedHat"
 
 - name: Install Mambaforge
-  ansible.builtin.shell:
+  ansible.builtin.command:
     cmd: /tmp/Mambaforge-23.3.1-1-Linux-x86_64.sh -b -p /opt/mambaforge
   args:
     creates: /opt/mambaforge
-  become: yes
+  become: true

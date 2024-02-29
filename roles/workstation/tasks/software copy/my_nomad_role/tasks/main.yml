@@ -1,0 +1,16 @@
+---
+- name: Install yum-utils
+  yum:
+    name: yum-utils
+    state: present
+
+- name: Add HashiCorp YUM repository
+  get_url:
+    url: https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+    dest: /etc/yum.repos.d/hashicorp.repo
+  when: ansible_os_family == "RedHat"
+
+- name: Install Nomad
+  yum:
+    name: nomad
+    state: latest

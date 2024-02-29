@@ -3,11 +3,11 @@
     path: "/usr/lib/firefox/distribution"
     state: directory
     mode: '0755'
-  become: yes
+  become: true
 
 - name: Deploy Firefox policies for extension installation
   ansible.builtin.copy:
     src: "{{ role_path }}/files/firefox_policies_extensions.json"
-    dest: "/usr/lib/firefox/distribution/extensions-policies.json" 
+    dest: "/usr/lib/firefox/distribution/extensions-policies.json"
     mode: '0644'
-  become: yes
+  become: true

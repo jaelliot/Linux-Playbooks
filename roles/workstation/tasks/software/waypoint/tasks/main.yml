@@ -8,9 +8,10 @@
   ansible.builtin.get_url:
     url: "{{ waypoint_repo_url }}"
     dest: /etc/yum.repos.d/hashicorp.repo
+    mode: '0644'
   when: ansible_os_family == "RedHat"
 
 - name: Install Waypoint
   ansible.builtin.yum:
     name: "{{ waypoint_package }}"
-    state: latest
+    state: present

@@ -1,34 +1,35 @@
 ---
 - name: Check if Flatpak is installed
-  command: flatpak --version
+  ansible.builtin.command: flatpak --version
   register: flatpak_installed
-  ignore_errors: yes
+  ignore_errors: true
   changed_when: false
 
 - name: Install Flatpak
-  package:
+  ansible.builtin.package:
     name: flatpak
     state: present
   when: flatpak_installed is failed
 
 - name: Check if Thunderbird Flatpak is installed
-  command: flatpak list | grep org.mozilla.Thunderbird
+  ansible.builtin.command: flatpak list | grep org.mozilla.Thunderbird
   register: thunderbird_flatpak_installed
-  ignore_errors: yes
+  ignore_errors: true
   changed_when: false
 
 - name: Install Thunderbird Flatpak
-  when: thunderbird is defined and thunderbird == true and thunderbird_flatpak_installed is failed
+  when: thunderbird_flatpak_installed is failed
   block:
-    - name: software | thunderbird | install package
+    - name: Software | Thunderbird | Install package
       become_user: jay
-      flatpak:
+      become: true
+      community.general.flatpak:
         name: org.mozilla.thunderbird
         method: user
         state: present
 
-    - name: software | thunderbird | enable autostart
-      file:
+    - name: Software | Thunderbird | Enable autostart
+      ansible.builtin.file:
         src: "/home/jay/.local/share/flatpak/exports/share/applications/org.mozilla.Thunderbird.desktop"
         dest: "/home/jay/.config/autostart/org.mozilla.Thunderbird.desktop"
         owner: jay

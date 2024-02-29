@@ -1,15 +1,17 @@
+---
 - name: Check if linode-cli is already installed
-  command: /usr/bin/pip3 list --format=freeze
+  ansible.builtin.command: /usr/bin/pip3 list --format=freeze
   register: pip_list
-  become: yes
+  become: true
   become_user: jay
+  changed_when: "'linode-cli' not in pip_list.stdout"
 
 - name: Install linode-cli using pip
-  pip:
+  ansible.builtin.pip:
     executable: /usr/bin/pip3
-    state: latest
+    state: present
     name: linode-cli
-  become: yes
+  become: true
   become_user: jay
   when: "'linode-cli' not in pip_list.stdout"
   tags: packages, linode, pip, python

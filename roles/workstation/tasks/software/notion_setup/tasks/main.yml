@@ -13,7 +13,7 @@
   ansible.builtin.systemd:
     name: snapd.socket
     state: started
-    enabled: yes
+    enabled: true
   when: "'snapd' not in ansible_facts.packages"
 
 - name: Create symlink for snap
@@ -25,10 +25,11 @@
 
 - name: Install Notion if not already installed
   ansible.builtin.shell: |
-    if ! snap list | grep -q notion-snap; then
+    set -o pipefail; if ! snap list | grep -q notion-snap; then
       snap install notion-snap
     fi
   args:
     executable: /bin/bash
   become: true
-  notify: restart snapd.socket
+  notify: Restart snapd.socket
+  changed_when: false

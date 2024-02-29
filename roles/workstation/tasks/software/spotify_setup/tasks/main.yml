@@ -1,28 +1,19 @@
 ---
 # spotify_setup/tasks/main.yml
 
-- name: Check if Flatpak is installed
-  command: which flatpak
-  register: flatpak_installed
-  ignore_errors: true
-
-- name: Install Flatpak
-  yum:
-    name: flatpak
-    state: present
-  when: flatpak_installed.rc != 0
-  become: true
-
 - name: Add Flathub repository
-  command: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+  ansible.builtin.command: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
   become: true
-
-- name: Check if Spotify is already installed
-  command: flatpak list
-  register: flatpak_list
   changed_when: false
 
+- name: Check if Spotify is already installed
+  ansible.builtin.command: flatpak list | grep com.spotify.Client
+  register: spotify_installed
+  changed_when: false
+  ignore_errors: true
+
 - name: Install Spotify
-  command: flatpak install -y flathub com.spotify.Client
+  ansible.builtin.command: flatpak install -y flathub com.spotify.Client
   become: true
-  when: '"com.spotify.Client" not in flatpak_list.stdout'
+  when: spotify_installed.rc != 0
+  changed_when: true # This task actually changes the state if Spotify is not installed, so it's appropriate to allow Ansible to handle change detection here.

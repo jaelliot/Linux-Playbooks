@@ -1,0 +1,19 @@
+---
+- name: Check if VLC is already installed
+  ansible.builtin.command: flatpak list --app | grep org.videolan.VLC
+  register: vlc_installed
+  failed_when: vlc_installed.stderr != ""
+  changed_when: false
+  become: true
+  become_user: jay
+  ignore_errors: true
+
+- name: Install VLC using Flatpak
+  community.general.flatpak:
+    name: org.videolan.VLC
+    state: present
+    method: user
+  become: true
+  become_user: jay
+  when: vlc_installed.rc != 0 and vlc is defined and vlc == true
+  tags: [packages, flatpak, vlc, workstation-packages]

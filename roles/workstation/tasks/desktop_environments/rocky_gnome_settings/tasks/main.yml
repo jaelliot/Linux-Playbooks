@@ -75,8 +75,17 @@
     - name: "GNOME | Shell settings | search-providers"
       ansible.builtin.dconf:
         key: "/org/gnome/desktop/search-providers/disabled"
-        value: "['org.gnome.Nautilus.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Photos.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Calendar.desktop']"
+        value:
+          - "org.gnome.Nautilus.desktop"
+          - "org.gnome.Calculator.desktop"
+          - "org.gnome.seahorse.Application.desktop"
+          - "org.gnome.Photos.desktop"
+          - "org.gnome.Terminal.desktop"
+          - "org.gnome.Documents.desktop"
+          - "org.gnome.Contacts.desktop"
+          - "org.gnome.Calendar.desktop"
         user: "jay"
+
 
     - name: "GNOME | Shell settings | show-battery-percentage"
       ansible.builtin.dconf:

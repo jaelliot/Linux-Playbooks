@@ -1,0 +1,3 @@
+---
+# vars file for todoist_installation
+todoist_enabled: true # This can be overridden in your playbook to enable/disable Todoist installation.

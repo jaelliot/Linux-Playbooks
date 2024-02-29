@@ -1,0 +1,3 @@
+---
+# defaults file for rocky_linux_tmux_installer
+tmux_package_name: tmux

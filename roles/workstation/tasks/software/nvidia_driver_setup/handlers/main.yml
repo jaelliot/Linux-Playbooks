@@ -1,6 +1,7 @@
 ---
 - name: Rebuild initramfs
-  command: dracut --force
+  ansible.builtin.command: dracut --force
+  changed_when: false
 
 - name: Reboot the system
-  reboot:
+  ansible.builtin.reboot:

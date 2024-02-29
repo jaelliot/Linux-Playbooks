@@ -7,9 +7,16 @@
     state: present
   when: ansible_facts['os_family'] == "RedHat"
 
+- name: Download civu CLI script
+  ansible.builtin.get_url:
+    url: https://civo.com/get
+    dest: /tmp/civu_install.sh
+    mode: '0755'
+  become: true
+
 - name: Install civu CLI
-  ansible.builtin.shell: |
-    curl -sL https://civo.com/get | sh
-  args:
+  ansible.builtin.command:
+    cmd: /tmp/civu_install.sh
     creates: /usr/local/bin/civo
+  warn: false
   become: true

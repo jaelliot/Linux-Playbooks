@@ -5,9 +5,12 @@
     mode: '0755'
 
 - name: Install RealScan G10 driver using Wine
-  ansible.builtin.shell: |
-    WINEPREFIX=~/.wine_realscan WINEARCH=win64 wine {{ realscan_driver_dest }} /S
+  ansible.builtin.command:
+    cmd: wine "{{ realscan_driver_dest }}" /S
+  environment:
+    WINEPREFIX: "~/.wine_realscan"
+    WINEARCH: "win64"
   args:
-    executable: /bin/bash
+    creates: "~/.wine_realscan/drive_c/Program Files/RealScan G10"
   become: true
   become_user: "{{ realscan_install_user }}"

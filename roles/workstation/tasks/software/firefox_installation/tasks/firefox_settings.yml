@@ -3,10 +3,12 @@
   ansible.builtin.file:
     path: /usr/lib/firefox/distribution
     state: directory
+    mode: '0755'  # Sets the directory permissions to rwxr-xr-x
   become: true
 
 - name: Configure Firefox Policies for Settings
   ansible.builtin.copy:
     src: "{{ role_path }}/files/firefox_policies_settings.json"
     dest: /usr/lib/firefox/distribution/policies.json
+    mode: '0644'  # Sets the file permissions to rw-r--r--
   become: true

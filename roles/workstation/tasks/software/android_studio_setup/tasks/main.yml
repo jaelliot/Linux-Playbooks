@@ -1,35 +1,49 @@
 ---
 - name: Ensure wget and tar are installed
-  dnf:
+  ansible.builtin.dnf:
     name:
       - wget
       - tar
     state: present
 
 - name: Check if Android Studio is already installed
-  stat:
+  ansible.builtin.stat:
     path: "{{ android_studio_install_dir }}/android-studio"
   register: android_studio_installed
 
-- block:
-  - name: Download Android Studio tarball
-    get_url:
-      url: "{{ android_studio_download_url }}"
-      dest: "/tmp/android-studio.tar.gz"
-      mode: '0644'
-    when: not android_studio_installed.stat.exists
+- when: not android_studio_installed.stat.exists
+  block:
+    - name: Download Android Studio tarball
+      ansible.builtin.get_url:
+        url: "{{ android_studio_download_url }}"
+        dest: /tmp/android-studio.tar.gz
+        mode: "0644"
 
-  - name: Extract Android Studio tarball
-    ansible.builtin.unarchive:
-      src: "/tmp/android-studio.tar.gz"
-      dest: "{{ android_studio_install_dir }}"
-      remote_src: yes
-      creates: "{{ android_studio_install_dir }}/android-studio"
-    when: not android_studio_installed.stat.exists
+    - name: Extract Android Studio tarball
+      ansible.builtin.unarchive:
+        src: /tmp/android-studio.tar.gz
+        dest: "{{ android_studio_install_dir }}"
+        remote_src: true
+        creates: "{{ android_studio_install_dir }}/android-studio"
 
-  - name: Set Android Studio environment variables
-    template:
-      src: android_studio.sh.j2
-      dest: /etc/profile.d/android_studio.sh
+    - name: Set Android Studio environment variables
+      ansible.builtin.template:
+        src: android_studio.sh.j2
+        dest: /etc/profile.d/android_studio.sh
+        mode: "0644"
 
-  when: not android_studio_installed.stat.exists
+  rescue:
+    - name: Clean up partial downloads
+      ansible.builtin.file:
+        path: /tmp/android-studio.tar.gz
+        state: absent
+      when: ansible_failed_task.name == "Download Android Studio tarball"
+
+    - name: Notify failure
+      ansible.builtin.debug:
+        msg: "Installation failed at task: {{ ansible_failed_task.name }}. Please check the logs."
+
+  always:
+    - name: Installation attempt complete
+      ansible.builtin.debug:
+        msg: "Android Studio installation process has completed. Check for any errors above."

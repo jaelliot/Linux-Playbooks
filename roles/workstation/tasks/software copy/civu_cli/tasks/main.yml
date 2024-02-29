@@ -1,0 +1,15 @@
+---
+# tasks file for civu_cli
+
+- name: Ensure curl is installed
+  ansible.builtin.package:
+    name: curl
+    state: present
+  when: ansible_facts['os_family'] == "RedHat"
+
+- name: Install civu CLI
+  ansible.builtin.shell: |
+    curl -sL https://civo.com/get | sh
+  args:
+    creates: /usr/local/bin/civo
+  become: true

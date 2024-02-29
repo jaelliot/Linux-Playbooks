@@ -1,0 +1,5 @@
+---
+# terraform_installer/defaults/main.yml
+terraform_version: "latest"
+install_terraform: true # Control flag to enable/disable Terraform installation
+

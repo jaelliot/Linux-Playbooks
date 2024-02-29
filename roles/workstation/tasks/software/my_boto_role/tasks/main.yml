@@ -2,33 +2,36 @@
 # tasks file for my_boto_role
 
 - name: Check if pip3 is installed
-  command: which pip3
+  ansible.builtin.command: which pip3
   register: pip3_check
   failed_when: pip3_check.rc > 1
   ignore_errors: true
   tags: always
+  changed_when: false
 
 - name: Install pip3 if not present
-  yum:
+  ansible.builtin.yum:
     name: python3-pip
     state: present
   become: true
   when: pip3_check.rc != 0
-  tags: 
+  tags:
     - boto
     - packages
 
 - name: Check if boto is already installed
-  command: /usr/bin/pip3 list | grep boto
+  ansible.builtin.command: /usr/bin/pip3 list | grep boto
   register: boto_check
   ignore_errors: true
   tags: always
+  changed_when: false
 
 - name: Install or update boto using pip3
-  pip:
+  ansible.builtin.pip:
     executable: /usr/bin/pip3
-    state: latest
+    state: present
     name: boto
+  become: true
   become_user: jay
   when: boto_check.stdout == ""
   tags:

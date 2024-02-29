@@ -1,0 +1,18 @@
+---
+# tasks/main.yml
+- name: Check if caffeine is installed
+  command: rpm -q caffeine
+  register: caffeine_installed
+  failed_when: caffeine_installed.rc > 1
+  changed_when: false
+  ignore_errors: true
+
+- name: Install caffeine
+  package:
+    name: caffeine
+    state: present
+  when: caffeine_installed.rc != 0
+  tags: 
+    - packages
+    - workstation-packages
+    - caffeine

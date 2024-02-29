@@ -12,6 +12,7 @@
       repo_gpgcheck=0
       gpgkey=https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
     create: true
+    mode: '0644'
   when: gcloud_cli_installed.rc != 0
 
 - name: Install libxcrypt-compat.x86_64 for compatibility

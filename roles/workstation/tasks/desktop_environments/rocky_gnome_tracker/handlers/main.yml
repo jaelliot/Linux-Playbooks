@@ -1,11 +1,12 @@
 ---
-- name: gnome_tracker_clean_cache
-  command: tracker reset -r
+- name: Gnome tracker clean cache
+  ansible.builtin.command: tracker reset -r
   become: true
   become_user: jay
+  changed_when: false
 
-- name: gnome_tracker_clean_local_cache
-  command: tracker reset -c
+- name: Gnome tracker clean local cache
+  ansible.builtin.command: tracker reset -c
   become: true
   become_user: jay
-
+  changed_when: false

@@ -1,14 +1,14 @@
 ---
-- name: Ensure Git is installed at the latest version
+- name: Ensure Git is installed
   ansible.builtin.dnf:
     name: git
-    state: latest
+    state: present
 
 - name: Set global Git configuration
-  ansible.builtin.git_config:
+  community.general.git_config:
     name: "{{ item.name }}"
     value: "{{ item.value }}"
     scope: global
   loop: "{{ git_config }}"
   loop_control:
-    loop_var: git_config
+    loop_var: item

@@ -1,18 +1,18 @@
 ---
 # tasks/main.yml
 - name: Check if caffeine is installed
-  command: rpm -q caffeine
+  ansible.builtin.yum:
+    list: caffeine
   register: caffeine_installed
-  failed_when: caffeine_installed.rc > 1
+  failed_when: '"Installed Packages" not in caffeine_installed.results'
   changed_when: false
-  ignore_errors: true
 
 - name: Install caffeine
-  package:
+  ansible.builtin.yum:
     name: caffeine
     state: present
-  when: caffeine_installed.rc != 0
-  tags: 
+  when: caffeine_installed.results | length == 0
+  tags:
     - packages
     - workstation-packages
     - caffeine

@@ -7,16 +7,16 @@
     state: present
 
 - name: Add Flathub repository
-  flatpak_remote:
+  community.general.flatpak_remote:
     name: flathub
     state: present
     flatpakrepo_url: https://flathub.org/repo/flathub.flatpakrepo
-  become: yes
+  become: true
 
 - name: Install Discord via Flatpak
-  flatpak:
+  community.general.flatpak:
     name: com.discordapp.Discord
     state: present
     method: system
     remote: flathub
-  become: yes
+  become: true

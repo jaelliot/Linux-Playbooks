@@ -1,6 +1,6 @@
 ---
 - name: Install KVM and other dependencies
-  dnf:
+  ansible.builtin.dnf:
     name:
       - qemu-kvm
       - libvirt
@@ -10,29 +10,25 @@
       - kubectl
     state: present
   register: package_installation
-  changed_when: "'No package' not in package_installation.msg"
-
-- name: Start and enable libvirtd service
-  systemd:
-    name: libvirtd
-    state: started
-    enabled: yes
-  when: package_installation is changed
+  changed_when: package_installation.msg | default('') | search('No package') == 0
+  notify: Start and enable libvirtd service
 
 - name: Check if Minikube is already installed
-  stat:
+  ansible.builtin.stat:
     path: "{{ minikube_destination }}"
   register: minikube_stat
 
 - name: Download Minikube
-  get_url:
+  ansible.builtin.get_url:
     url: "{{ minikube_url }}"
     dest: "{{ minikube_destination }}"
     mode: "{{ minikube_permissions }}"
   when: not minikube_stat.stat.exists
 
 - name: Install Minikube
-  command: minikube start --driver=kvm2
-  become: yes
+  ansible.builtin.command:
+    cmd: minikube start --driver=kvm2
+  become: true
   become_user: "{{ user_name }}"
   when: not minikube_stat.stat.exists
+  changed_when: false

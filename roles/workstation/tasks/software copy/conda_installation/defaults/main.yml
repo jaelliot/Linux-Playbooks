@@ -1,0 +1,5 @@
+---
+# defaults/main.yml
+conda_version: "latest"
+conda_install_path: "/opt/conda"
+

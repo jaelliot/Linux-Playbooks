@@ -1,0 +1,13 @@
+---
+- ansible.builtin.include_tasks: prerequisites.yml
+- name: Add Flathub repository
+  ansible.builtin.shell: flatpak remote-add --if-not-exists flathub {{ signal_flatpak_repo }}
+  args:
+    executable: /bin/bash
+  become: true
+
+- name: Install Signal Desktop
+  ansible.builtin.shell: flatpak install -y flathub {{ signal_flatpak_package }}
+  args:
+    executable: /bin/bash
+  become: true

@@ -11,14 +11,15 @@
   ansible.builtin.get_url:
     url: https://kindleforpc.s3.amazonaws.com/70682/KindleForPC-installer-2.3.70682.exe
     dest: "/tmp/KindleForPC-installer-2.3.70682.exe"
+    mode: '0755'
 
 - name: Install Kindle for PC
   ansible.builtin.command:
     cmd: wine /tmp/KindleForPC-installer-2.3.70682.exe /S
+  become: true
   become_user: "{{ ansible_user }}"
   environment:
     DISPLAY: ":0.0"
     WINEPREFIX: "/home/{{ ansible_user }}/.wine"
     WINEARCH: "win64"
-
-
+  changed_when: false

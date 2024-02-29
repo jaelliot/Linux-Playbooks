@@ -8,26 +8,27 @@
   ansible.builtin.yum:
     name: snapd
     state: present
-  when: "'snapd' not in packages"
+  when: "'snapd' not in ansible_facts.packages"
 
 - name: Enable snapd socket
   ansible.builtin.systemd:
     name: snapd.socket
     state: started
     enabled: true
-  when: "'snapd' not in packages"
+  when: "'snapd' not in ansible_facts.packages"
 
 - name: Ensure snap core is installed
-  ansible.builtin.command: snap install core
-  when: "'snapd' not in packages"
+  ansible.builtin.shell: snap install core || true
+  args:
+    warn: false
+  changed_when: false
+  when: "'snapd' not in ansible_facts.packages"
 
 - name: Install Todoist via snap
   community.general.snap:
     name: todoist
     state: present
-  when:
-    - ansible_distribution != "Archlinux"
-    - todoist_enabled
+  when: todoist_enabled
 
 - name: Enable Todoist autostart
   ansible.builtin.file:
@@ -36,6 +37,4 @@
     owner: "{{ ansible_user_id }}"
     group: "{{ ansible_user_id }}"
     state: link
-  when:
-    - ansible_distribution != "Archlinux"
-    - todoist_enabled
+  when: todoist_enabled

@@ -1,0 +1,19 @@
+---
+- name: Check if Firefox is already installed
+  ansible.builtin.shell: "dnf list installed firefox"
+  register: firefox_installed
+  failed_when: firefox_installed.stderr != '' and 'No matching Packages' not in firefox_installed.stderr
+  changed_when: false
+  ignore_errors: true
+
+- name: Install or Update Firefox to the latest version
+  ansible.builtin.dnf:
+    name: firefox
+    state: latest
+  when: firefox_installed.rc != 0
+
+- name: Include Firefox extension tasks
+  import_tasks: firefox_extension.yml
+
+- name: Include Firefox settings tasks
+  import_tasks: firefox_settings.yml
