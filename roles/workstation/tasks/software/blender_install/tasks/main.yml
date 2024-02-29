@@ -1,0 +1,28 @@
+---
+# tasks file for blender_install
+
+- name: Check if snapd is installed
+  ansible.builtin.command: which snap
+  ignore_errors: true
+  register: snap_installed
+  changed_when: false
+
+- name: Install snapd
+  ansible.builtin.yum:
+    name: snapd
+    state: present
+  when: snap_installed.rc != 0
+
+- name: Enable snapd socket
+  ansible.builtin.systemd:
+    name: snapd.socket
+    state: started
+    enabled: true
+  when: snap_installed.rc != 0
+
+- name: Install Blender from the 3.6 LTS channel
+  ansible.builtin.command: snap install blender --channel=3.6lts/stable --classic
+  args:
+    creates: /snap/bin/blender
+  register: blender_installation
+  changed_when: blender_installation.rc == 0
