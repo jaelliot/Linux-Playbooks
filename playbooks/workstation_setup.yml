@@ -6,18 +6,6 @@
   gather_facts: true
 
   tasks:
-    # System Setup
-    - name: System Setup Tasks
-      block:
-        - ansible.builtin.import_role:
-            name: system_setup/ssh_hardening
-
-    # Users
-    - name: User Configuration
-      block:
-        - ansible.builtin.import_role:
-            name: users/rocky_linux_user_setup
-
     # Install Software
     - name: Install Software Packages
       block:
