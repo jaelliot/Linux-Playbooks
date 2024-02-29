@@ -1,25 +1,38 @@
 - name: Install Chrome Extensions on Rocky Linux
-  block:
-    - name: Ensure Chrome policy directory exists
-      ansible.builtin.file:
-        path: /etc/opt/chrome/policies/managed
-        state: directory
-        mode: '0755'
+- block:
+   - name: Ensure Chrome policy directory exists
+     ansible.builtin.file:
+       path: /etc/opt/chrome/policies/managed
+       state: directory
+       mode: '0755'
 
-    - name: Configure Chrome extensions to be installed
-      ansible.builtin.copy:
-        dest: /etc/opt/chrome/policies/managed/extensions_policy.json
-        content: |
-          {
-            "ExtensionInstallForcelist": [
-              "enamippconapkdmgfgjchkhakpfinmaj;https://clients2.google.com/service/update2/crx",
-              "ponfpcnoihfmfllpaingbgckeeldkhle;https://clients2.google.com/service/update2/crx",
-              "nakplnnackehceedgkgkokbgbmfghain;https://clients2.google.com/service/update2/crx",
-              "ghbmnnjooekpmoecnnnilnnbdlolhkhi;https://clients2.google.com/service/update2/crx",
-              "aapbdbdomjkkjkaonfhkkikfgjllcleb;https://clients2.google.com/service/update2/crx",
-              "mefhakmgclhhfbdadeojlkbllmecialg;https://clients2.google.com/service/update2/crx"
-            ]
-          }
-        owner: root
-        group: root
-        mode: '0644'
+   - name: Configure Chrome extensions to be installed
+     ansible.builtin.copy:
+       dest: /etc/opt/chrome/policies/managed/extensions_policy.json
+       content: |
+         {
+           "ExtensionInstallForcelist": [
+             "aapbdbdomjkkjkaonfhkkikfgjllcleb;https://clients2.google.com/service/update2/crx",
+             "agleiimpggapjekcdhdjbmegjbbkleie;https://clients2.google.com/service/update2/crx",
+             "ahfgeienlihckogmohjhadlkjgocpleb;https://clients2.google.com/service/update2/crx",
+             "cjpalhdlnbpafiamejdnhcphjbkeiagm;https://clients2.google.com/service/update2/crx",
+             "enamippconapkdmgfgjchkhakpfinmaj;https://clients2.google.com/service/update2/crx",
+             "fiabciakcmgepblmdkmemdbbkilneeeh;https://clients2.google.com/service/update2/crx",
+             "fihnjjcciajhdojfnbdddfaoknhalnja;https://clients2.google.com/service/update2/crx",
+             "gebbhagfogifgggkldgodflihgfeippi;https://clients2.google.com/service/update2/crx",
+             "hdannnflhlmdablckfkjpleikpphncik;https://clients2.google.com/service/update2/crx",
+             "hdokiejnpimakedhajhdlcegeplioahd;https://clients2.google.com/service/update2/crx",
+             "jiaopdjbehhjgokpphdfgmapkobbnmjp;https://clients2.google.com/service/update2/crx",
+             "khncfooichmfjbepaaaebmommgaepoid;https://clients2.google.com/service/update2/crx",
+             "mhjfbmdgcfjbbpaeojofohoefgiehjai;https://clients2.google.com/service/update2/crx",
+             "mnjggcdmjocbbbhaepdhchncahnbgone;https://clients2.google.com/service/update2/crx",
+             "nakplnnackehceedgkgkokbgbmfghain;https://clients2.google.com/service/update2/crx",
+             "neajdppkdcdipfabeoofebfddakdcjhd;https://clients2.google.com/service/update2/crx",
+             "nkeimhogjdpnpccoofpliimaahmaaome;https://clients2.google.com/service/update2/crx",
+             "nmmhkkegccagdldgiimedpiccmgmieda;https://clients2.google.com/service/update2/crx",
+             "pganeibhckoanndahmnfggfoeofncnii;https://clients2.google.com/service/update2/crx"
+           ]
+         }
+       owner: root
+       group: root
+       mode: '0644'
