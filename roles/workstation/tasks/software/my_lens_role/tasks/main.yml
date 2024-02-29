@@ -1,0 +1,24 @@
+---
+# tasks file for my_lens_role
+- name: Check if snapd is installed
+  ansible.builtin.package_facts:
+    manager: "auto"
+
+- name: Install snapd
+  ansible.builtin.package:
+    name: snapd
+    state: present
+  when: "'snapd' not in packages"
+
+- name: Ensure snapd service is running
+  ansible.builtin.service:
+    name: snapd
+    state: started
+    enabled: true
+
+- name: Install Lens IDE snap package
+  ansible.builtin.command:
+    cmd: snap install --classic Lens-2024.1.300751-latest.amd64
+  args:
+    creates: /var/lib/snapd/snaps/Lens-2024.1.300751-latest.amd64.snap
+  become: true

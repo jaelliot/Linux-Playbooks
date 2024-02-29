@@ -1,4 +1,0 @@
----
-- name: Run OpenLens
-  ansible.builtin.command: flatpak run dev.k8slens.OpenLens
-  changed_when: false
