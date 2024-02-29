@@ -1,6 +1,0 @@
----
-- name: Rebuild initramfs
-  command: dracut --force
-
-- name: Reboot the system
-  reboot:

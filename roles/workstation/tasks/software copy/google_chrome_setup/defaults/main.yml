@@ -1,4 +1,0 @@
----
-# defaults/main.yml
-chrome_repo_key_url: https://dl.google.com/linux/linux_signing_key.pub
-chrome_repo_baseurl: https://dl.google.com/linux/chrome/rpm/stable/$basearch

@@ -1,6 +1,0 @@
----
-- name: restart snapd.socket
-  ansible.builtin.systemd:
-    name: snapd.socket
-    state: restarted
-    enabled: yes

@@ -1,8 +1,0 @@
----
-git_config:
-  - name: user.name
-    value: Your Name # Change this value or make it configurable
-  - name: user.email
-    value: youremail@example.com # Change this
-  - name: core.editor
-    value: vim

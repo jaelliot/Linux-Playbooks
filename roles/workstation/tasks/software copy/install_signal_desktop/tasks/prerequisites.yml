@@ -1,5 +1,0 @@
----
-- name: Ensure Flatpak is installed
-  ansible.builtin.dnf:
-    name: flatpak
-    state: present

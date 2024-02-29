@@ -1,6 +1,0 @@
----
-# defaults file for example_software_setup
-
-realscan_driver_url: https://github.com/jaelliot/fingerprinting-resources/blob/main/files/RealScan_Driver(x64)_v1.3.0.0.exe?raw=true
-realscan_driver_dest: "/tmp/RealScan_G10_Driver.exe"
-realscan_install_user: Jay

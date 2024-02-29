@@ -1,5 +1,0 @@
----
-doctl_version: "1.101.0"
-doctl_arch: "amd64" # or "arm64" based on the target architecture
-doctl_download_url: "https://github.com/digitalocean/doctl/releases/download/v{{ doctl_version }}/doctl-{{ doctl_version }}-linux-{{ doctl_arch }}.tar.gz"
-
